@@ -164,6 +164,14 @@ These two will look the same, but the latter is easier to read and edit.
 
 In addition, here are a few more tips.
 
+* Check all spellings of names and especially check for accents etc. in author/editor names.
+* Be consistent about "Signal Processing, IEEE Transactions on" vs. "IEEE Transactions on Signal Processing." I think the latter is better always, but if you use the former, make sure all journal articles are cited that way.
+* Only abbreviate journal titles at the end if you need the space.
+* Always include a URL if there is one for the article. Also include a DOI in the BibTeX. If the article has a DOI, use http://dx.doi.org/(DOI) as the URL, e.g. [http://dx.doi.org/10.1109/TAC.2014.2329611](http://dx.doi.org/10.1109/TAC.2014.2329611) for DOI 10.1109/TAC.2014.2329611
+* Be careful about capitalization of journal titles etc.
+
+Sloppy bibliographies give the impression of sloppy research. Don't do it.
+
 #### Internal references
 
 Use `\label` and `\ref` for internal references -- don't use static equation numbers. Use `\eqref{foo}` instead of `(\ref{foo})`.
