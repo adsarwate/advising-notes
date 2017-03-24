@@ -1,26 +1,63 @@
-# Advising notes
+# A Handbook for Research
+
+This is all subjective, of course, but represents a collection of advice about ways to approach various tasks involved in doing research, tools that can help, and best practices. The items range from the big to the small -- maybe over time this can get split into multiple documents or something.
 
 
-## Some skills to acquire
+## Reading the literature
 
-* How to read a paper
-* How to review a paper
-* How to do a literature search
-* How to write a literature review
-* Critical reading
-* Talks
-	* Conference talks
-	* Qualifying/proposal talks
-	* Seminar talks
+### Reading a research paper
+
+* Questions to ask yourself while reading
+
+### Doing a literature search
+
+* Breadth-first
+* Depth-first
+
+### Writing a literature review
+
+### Reviewing a paper
+
+
+## Public presentation
+
+### How to outline a talk
+
+### Conference Talks
+
+### Qualifying exams, proposal defenses, etc.
+
+### Public seminars
+
+### Outreach talks
+
 
 
 ## Software and tools
 
+You should probably become familiar with the following tools, especially if you are going to be doing research in this lab/field/area:
+
+### Programming and simulation
+
+* matlab vs. python vs. R vs. C vs. ???
+
+### Version control and repositories
+
 * git
-* website
-* mendeley?
-* python
-* other languages
+
+
+### Authoring tools
+
+* latex (more on this below) and bibtex
+* visual editors
+
+### Making figures and diagrams
+
+* matplotlib and python
+* omnigraffle
+
+### Task management
+
 
 ## Writing tips
 
@@ -49,8 +86,9 @@ Don't worry about issues like page length and so on until the paper is written -
 ### Common LaTeX Errors to avoid
 
 Here are some general tips to start out:
-	* [JDO's common errors](http://web.ece.ucdavis.edu/~jowens/commonerrors.html)
-	* [Eddie Kohler's advice](http://www.read.seas.harvard.edu/~kohler/latex.html)
+
+* [JDO's common errors](http://web.ece.ucdavis.edu/~jowens/commonerrors.html)
+* [Eddie Kohler's advice](http://www.read.seas.harvard.edu/~kohler/latex.html)
 
 
 ### Tips in writing math
