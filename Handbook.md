@@ -79,7 +79,7 @@ General writing advice:
 
 ## LaTeX
 
-LaTeX is supposed to format things for you -- don't use manual line breaks like \\ in running text unless you absolutley have to. You can often specifiy hyphenations if you need to let LaTeX break lines.
+LaTeX is supposed to format things for you -- don't use manual line breaks like \\ in running text unless you absolutely have to. You can often specify hyphenations if you need to let LaTeX break lines.
 
 Don't worry about issues like page length and so on until the paper is written -- it's a waste of time to hack around with stuff like that until you are on final edits cleaning things up.
 
