@@ -1,0 +1,57 @@
+\usepackage{\bm}
+
+% shortcuts for 
+\def\mc{\mathcal}
+\def\mbb{\mathbb}
+\def\msf{\mathsf}
+%\def\mbf{\mathbf} -- deprecated: use \bm
+%\def\mbs{\boldsymbol}
+
+% inner products and norms
+\newcommand{\ip}[2]{\left\langle #1,\ #2 \right\rangle}
+\newcommand{\norm}[1]{\left\| #1 \right\|}
+
+% common functionals
+\newcommand{\det}{\mathop{\mathrm{det}}\nolimits}
+\newcommand{\tr}{\mathop{\mathrm{Tr}}\nolimits}
+\newcommand{\sgn}{\mathop{\mathrm{sgn}}\nolimits}
+\newcommand{\diag}{\mathop{\mathrm{diag}}\nolimits}
+\newcommand{\Var}{\mathop{\mathrm{Var}}\nolimits}
+\newcommand{\rect}{\mathop{\mathrm{rect}}\nolimits}
+\newcommand{\sinc}{\mathop{\mathrm{sinc}}\nolimits}
+
+% optimization stuff
+\newcommand{\argmax}{\mathop{\mathrm{argmax}}}
+\newcommand{\argmin}{\mathop{\mathrm{argmin}}}
+\newcommand{\argsup}{\mathop{\mathrm{argsup}}}
+\newcommand{\arginf}{\mathop{\mathrm{arginf}}}
+
+% probability stuff
+\newcommand{\E}{\mathbb{E}}
+\renewcommand{\P}{\mathbb{P}}
+
+\newcommand{\iidsim}{\stackrel{\mathrm{i.i.d.}}{\sim}}
+
+\newcommand{\bern}{\mathsf{Bernoulli}}
+\newcommand{\unif}{\mathsf{Uniform}}
+\newcommand{\expv}{\mathsf{Exp}}
+\newcommand{\binomv}{\mathsf{Binomial}}
+\newcommand{\lap}{\mathsf{Laplace}}
+
+% information theory stuff
+\newcommand{\bsc}{\mathsf{BSC}}
+\newcommand{\bec}{\mathsf{BEC}}
+\newcommand{\mi}[2]{I\left( #1 ; #2 \right)}
+\newcommand{\kldiv}[2]{D\left( #1 \middle| #2 \right)}
+
+% Editing macros -- add your own!
+\newcommand{\todo}[1]{\textcolor{red} {\textbf{Todo: #1}}}
+\newcommand{\ads}[1]{\textcolor{BurntOrange}{\textbf{ADS:} #1}}
+
+\usepackage[normalem]{ulem}
+\newcommand\redout{\bgroup\markoverwith{\textcolor{red}{\rule[.5ex]{2pt}{0.4pt}}}\ULon}
+\newcommand{\edit}[2]{\redout{#1}{~\textcolor{blue}{#2}}}
+
+\newcommand{\cn}{\textcolor{red}{[\raisebox{-0.2ex}{\tiny\shortstack{citation\\[-1ex]needed}}]}}
+
+
