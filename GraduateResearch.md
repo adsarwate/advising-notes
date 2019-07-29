@@ -1,4 +1,4 @@
-# Becoming a researcher (in grad school)
+# Becoming a graduate researcher
 
 ##### an idiosyncratic take by Anand D. Sarwate
 
@@ -9,7 +9,7 @@ These are some notes and miscellaneous items about skills and tips for success i
 
 ## Getting started: look like a researcher, not an undergrad
 
-Since your goal is to publish new research findings, you have to start thinking of yourself as having a "public image" as a researcher. This means you have to create a way for other researchers (or potential employers) to find you and learn more about what you are working on. The last thing you want is for people to search for your name and turn up nothing or worse, a bunch of links to different people with the same name.
+Since your goal is to publish new research discoveries, you have to start thinking of yourself as having a "public image" as a researcher. This means you have to create a way for other researchers (or potential employers) to find you and learn more about what you are working on. The last thing you want is for people to search for your name and turn up nothing or worse, a bunch of links to different people with the same name with embarassing social media presences.
 
 A checklist:
 
@@ -64,9 +64,15 @@ There are a lot of different concrete skills that you (should) develop as a grad
 
 There is already lots of advice on how to read papers:
 
+**to be written**
+
 ### How to do a literature search
 
+**to be written**
+
 ### How to write a literature review
+
+**to be written**
 
 ### How to review a paper
 
@@ -74,12 +80,14 @@ Chances are, once you have gotten a reasonable handle on research in an area and
 
 There is already lots of advice on how to write a review:
 
+**find from old emails**
+
 ### How to give a talk
 
 There is infinite advice out there on how to give good talks, as well as some pretty funny advice about how to not to give talks
 
 #### Conference talks
-#### Qualifying/proposal talks
+#### Group meeting/lab talks
 #### Seminar talks
 
 
