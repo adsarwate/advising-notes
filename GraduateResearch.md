@@ -7,6 +7,14 @@ These are some notes and miscellaneous items about skills and tips for success i
 * what classes to take
 * how to pass various exams
 
+This is very much a work in progress and some stuff has yet to be written. If you have some suggestions, please email me.
+
+## Some other sources of advice
+
+* [MIT Comm Lab's CommKit]
+(https://mitcommlab.mit.edu/nse/use-the-commkit/)
+
+
 ## Getting started: look like a researcher, not an undergrad
 
 Since your goal is to publish new research discoveries, you have to start thinking of yourself as having a "public image" as a researcher. This means you have to create a way for other researchers (or potential employers) to find you and learn more about what you are working on. The last thing you want is for people to search for your name and turn up nothing or worse, a bunch of links to different people with the same name with embarassing social media presences.
@@ -23,20 +31,21 @@ You can do all of these in half an afternoon (at least a minimum). There is real
 
 ### Create a homepage
 
-You should create a homepage for yourself. Why? That way you have a place to put your CV, links to projects and code, a description of your research, and other public-facing information about yourself. You don't have to list hobbies or the books you read or anything else that you don't feel like sharing. But having a homepage gives people wanting to know more about your research someplace to go.
+You should create a homepage for yourself. Why? That way you have a place to put your CV, links to projects and code, a description of your research, and other public-facing information about yourself. You don't have to list hobbies or the books you read or anything else that you don't feel like sharing. But having a homepage gives people wanting to know more about your research someplace to go. It is also important for internships -- companies will look at your website to see what you are doing.
 
 You can either host the website on a department or university server or make a site on Google Sites or some other web-based service.
 
-* An institutional website means you probably have to edit the HTML yourself, but there are lots of templates out there. Perhaps the most famous is [jemdoc](https://jemdoc.jaboc.net). It also has the advantage
+* An institutional website means you probably have to edit the HTML yourself, but there are lots of templates out there. Perhaps the most famous is [jemdoc](https://jemdoc.jaboc.net). It also has the advantage of being a familiar format that lots of people use.
 * Third-party hosting means your page will not die when you graduate but it (usually) gives you a little less control and makes you "less obviously" affiliated with your university.
 
 ### Make a git repo
 
-It is very important to have a public repository of code from projects you have worked on. Perhaps you already have a git account on [GitHub](https://www.github.com/) or [GitLab](https://www.gitlab.com/): good for you! There are lots of reasons to have a homepage:
+It is very important to have a public repository of code from projects you have worked on. Perhaps you already have a git account on [GitHub](https://www.github.com/) or [GitLab](https://www.gitlab.com/): good for you! There are lots of reasons to have a repo:
 
 * If you write code for an algorithm you developed or a simulation from a paper, you should create a repo for the paper and post the code (including preprocessing) and data (or a link to the data if it's a public data set). This is part of doing reproducible research.
 * If you apply for an internship, companies will look at your git repos. If you have nothing there, they will think you have no skills: it looks bad! If you have no papers yet but some code from class projects, put up the code and project there. This shows that you know how to do things.
 * If you get a job in industry, chances are you will have to use git. You should be aware of how it works and how to use it in order to be more employable.
+* You can use the lab git repository and point to contribuutions you have made to research projects (e.g. the code from a paper) there.
 
 Make sure you link to your git account from your homepage!
  
@@ -44,7 +53,7 @@ Make sure you link to your git account from your homepage!
 
 Social media is currently a totally optional thing -- lots of prominent researchers do not have Twitter accounts. However, if it is something you are comfortable with, you might consider creating a Twitter account to engage with other members of the academic community (and the public more broadly). The downsides are standard: social media can be a total waste of time and attention. The upsides are that you might get a better sense of what kind of research is interesting to people/generates a lot of attention.
 
-If you already have a Twitter handle, keep in mind that people who read your papers will automatically connect your Twitter handle with your role as a researcher. This is a hazard
+If you already have a Twitter handle, keep in mind that people who read your papers will automatically connect your Twitter handle with your role as a researcher. This is a hazard depending on what you do publicly on twitter.
 
 ### Update LinkedIn
 
@@ -54,25 +63,85 @@ A great resource for understanding job-related things, how to present yourself i
 
 ### Create an ORCID
 
-Many publication venues are requring authors to link their papers with their ORCID. You can create one at [https://www.orcid.org/](https://www.orcid.org/).
+Many publication venues are now requring authors to link their papers with their ORCID. You can create one at [https://www.orcid.org/](https://www.orcid.org/).
 
-## Some skills to acquire
+### Make a CV
+
+You will want to make a resume or CV (see the [MIT Comm Lab's CommKit]
+(https://mitcommlab.mit.edu/nse/use-the-commkit/)) that you can update as you progress through grad school. A CV is more research-oriented, whereas a resume is more for looking for jobs/internships. Depending on the internship, they may prefer a CV. Sometimes you feel awkward making a CV before you have published anything, but having one there that you can add to is important.
+
+
+
+
+## Getting organized
+
+### Keeping track of your work
+
+### Time management
+
+Time management is a crucial skill, especially while managing
+
+* [http://www.raulpacheco.org/tag/project-planning/](http://www.raulpacheco.org/tag/project-planning/)
+
+
+
+### Balancing coursework and research
+
+### Preparing for meetings
+
+### 
+
+## Research Skills
 
 There are a lot of different concrete skills that you (should) develop as a graduate student. A lot of these have to do with successfully grappling with the vast amount of research that already exists: how to read it, how to evalute it critically, how to organize and summarize it, and how to present it.
 
 ### How to read a paper
 
-There is already lots of advice on how to read papers:
+There is already lots of advice on how to read papers out there. I think the first thing to decide is what kind of reading are you going to do? That is, you have to figure out what you want to learn from the paper.
 
-**to be written**
+* What is this area of research about?  Then you can read the introduction and skim the experiments if there are any. 
+* How do they formulate their problem mathematically? You should read the intro (maybe skim some of it/read it later) and definitely read the model, problem statement, or whatever that section is called.
+* What does this paper show? Read all of the above as well as the main results (but not the proofs). Focus on trying to understand what the results mean.
+* How do they prove their results? In this case you want to focus on the proofs at least at the proof sketch level or even better, line by line. Try to make sure you can understand each step, or ask for help!
 
 ### How to do a literature search
 
-**to be written**
+Doing a literature search means finding all of the relevant papers on a single topic. The goal is to broad and comprehensive -- you want to find more papers/books/etc. that might be useful before you decide which ones to include in your search.
+
+One way to start is to pick a paper that you know is on the topic and read the intro/related work section. There will be sentences like "Patel et al. [13] showed that the general problem of optimizing the rate is NP-hard, but later work by Xu and Zhang [14] gave a characterization of problems which can be efficiently optimized by solving a linear program." Then you know that the papers by Patel et al. [13] and Xu and Zhang [14] aer both relevant to the theoretical aspects of the problem. You can download those to papers and late read their related work, etc.
+
+Another good option is to see what papers cite the paper you found by looking in Google Scholar for example. Then you can find later papers which cite the paper you are looking at. Some will seem relevant and some will be irrelevant. Download the relevant ones and do the same search procedure on them by reading the related work.
+
+How do you decide whether to include a paper in your search? You want to search broadly but you need to categorize the papers so that you can start organizing the citations by what the papers talk about. You might have one category of primarily experimental papers, one category for theoretical analyses, one category for applications to diffent problems, and so on. Or you might have papers which are written by statisticians versus those written by electrical engineers which don't seem to cite each other but are looking at similar problems.
+
+Some questions to help you organize your thinking around a paper you are looking at are given below. These are not exhaustive but should give you a sense of the kind of questions you should be asking before and as you read.
+
+* Where was this published? Is this a top-tier journal or conference? Is it one you have heard of? It's easy to find papers which are published in less impactful venues which might seem to be relevant but which are actually not.
+* Who are the authors and what institution (academic or industry) are they from? What kind of department are they in? This can tell you a lot about the methodology and terminology you are likely to encounter in the paper.
+* What sort of paper is this: one which proposes a new model and proves new theorems, one which solves a longstanding open problem, one which proposes algorithms an analyses them, one which proposes algorithms and shows that they work experimentally, one which summarizes the work in an area, or some mix of the above?
+* What kind of analytical tools do they use?
+* What is the scale of the experiments: testing it out on commonly used datasets like MNIST and CIFAR-10, or application-specific data sets which are publicly available, or data which is only available to the authors?
+
+It is quite possible to have 100+ papers that you download. That is research! You have to SEARCH and REad to understand what has been done before.
+
 
 ### How to write a literature review
 
-**to be written**
+Once you have your pile of papers and notes on the papers, you have to organize them into a coherent description of the related work on a problem.
+
+Finally, take notes on each of the papers, and add the references to a BibTeX file so you can write up a summary. Start by writing little chunks of summary tying things togeher. For example: 
+
+> *"the problem was first studied by Johnson [1] and sparked new work in both the physics and engineeing communities. Physicists [2-4] used statistical mechanics to understand the phenomena in very large systems. The recent survey paper by Gentile et al. [5] describes this body of research in great detail. On the engineering side, separate work by Horn and Kay [6] and Sastry et al. [7] showed that for smaller systems one could observe coupling between individual components..."* 
+
+Then you might have a separate section which addresses experimental or algorithmics work. And so on.
+
+Eventually you have enough fragments to try and organize them into a story. Think of how you would explain the problem to your friend and all the work that has been done. You can't do it by talking about random papers, but instead talk about different dimensions of the problem and what work has been done in those directions.
+
+If this literature review is part of a related work section for a  paper you are wriing, then you need to describe what the paper does, what it doesn't do, and what your paper does differently. You should never (if you can avoid it) write a sentence like 
+
+> *Patel et al. studied a similar problem [1]*. 
+
+In what way is it similar? That sentence is almost meaningless.
 
 ### How to review a paper
 
@@ -87,7 +156,9 @@ There is already lots of advice on how to write a review:
 There is infinite advice out there on how to give good talks, as well as some pretty funny advice about how to not to give talks
 
 #### Conference talks
+
 #### Group meeting/lab talks
+
 #### Seminar talks
 
 
@@ -119,6 +190,29 @@ Why am I so anti-MATLAB? It's expensive, not that fast, and industry is moving a
 
 ## Computational Experiments
 
+A lot of experiments in my research areas involve working with simulations of algorithms operating on synthetic or real data. This means that there are often many different ways of understanding how to set up an appropriate experimental validation of your theoretical or algorithmic ideas. What follows is one approach to figuring out how to set up and run your experiments. In this, I assume you have the algorithm working properly (i.e. the bugs have been worked out).
+
+The central thing to figure out is the set of questions your want your experiments to answer. These questions have to be specific and answerable in a single plot/table/diagram/etc. It is tempting to run a bunch of simulations first and then figure out what questions to ask later but you will invariably end up asking different questions than you should or having to rerun of new simulations. 
+
+So what do I mean by specific and answerable? Let's do an example of refining a too-general question into something more workable. Suppose you have an algorithm for training a predictor on labeled data (a supervised learning algorithm). The algorithm has parameters A and B. Starting from the top:
+
+* How good is my algorithm?
+* How does the test error of my algorithm behave?
+* What is the test error of my algorithm as a function of the sample size?
+* How does the test error decrease with the number of training points?
+* How does the test error decrease with the number of training points for small A?
+* How does changing B affect how my test error decreases with the number of training points when A is small?
+
+At the end you can answer this question with a plot that has several plots (one for each value of B) of error versus training set size for fixed A.
+
+When figuring out what to do for experiments you want to write down the list of performance criteria (e.g. test error, run time, memory usage, bandwidth) and a list of algorithm parameters (A, B, sample size, bound on the norm of input points, etc.). You will be fixing some of these and seeing how the others behave. Or you will be constraining one of the performance criteria (e.g. make sure the memory doesn't exceed 1 Gb).
+
+When preparing to do experiments:
+
+* Make a list of questions first. **Write them down.**
+* Figure out what simulations to run.
+* Determine how to visualize your results.
+* Interpret your results (e.g. answer the question).
 
 
 
@@ -127,14 +221,34 @@ Why am I so anti-MATLAB? It's expensive, not that fast, and industry is moving a
 
 General writing advice:
 
-* Writing is hard! It is 99% rewriting.
+* Writing is hard! It is 99% rewriting. Be prepared for writing to take lots of time: more time than you think it should.
+* Read Harold Becker's Writing for Social Scientists (in the lab Google Drive or you can find it online). It says "for social scientists" but has a lot of general advice which can help when you are writing.
+* [Improving your academic writing: My top 10 tips](http://www.raulpacheco.org/2013/02/improving-your-academic-writing-my-top-10-tips/)
+* Get used to writing notes and other mini writeups in LaTeX. This will both help you get more proficient with LaTeX but also the act of writing down can help in trying to understand things. For example, suppose you want to use a theorem from some paper or book. Copy out the theorem and 
+
 
 ### Getting started with writing
 
-* Mind maps
-* Outlining
-* Avoiding censoring
-* Being verbose
+One of the hardest things about writing is getting started. Staring at a blank page can be quite intimidating. But there are a couple of ways to get started (see also the advice from the Becker book).
+
+* Mind maps: a mind map is a graph where you can write down little ideas/concepts and link them to help you organize your thoughts. There are lots of explanations online.
+* Outlining: making a detailed outline of your paper/writeup is a good starting place. You can go all the way down to outlining paragraph-by-paragraph if necessary. What an outline can do is break the writing task into more manageable pieces. Depending on what you are writing, there are outlines to start with, such as:
+  * Introduction
+  * Model/Problem Statement
+  * Proposed Algorithm
+  * Analysis
+  * Experiments
+  * Discussion/Conclusion
+* If you are writing up a proof or some analysis, you can also outline just that part so you can break down the steps of the argument that you need to make, like
+  * Decomposing the error
+  * Bounding $\beta_1$
+  * Bounding $\beta_2$
+  * Formulating the error as a recursion
+  * Putting all the pieces together
+* Avoiding censoring: sometimes when writing it is best to start by just putting any text on the page and then later going back to edit it. Becker has some advice on this as well. This works especially if you have a lot of ideas but are not sure how to organize them. Writing down all your thoughts (even if in half sentences and non-grammatical) puts it all down on paper and lets you go back and organize it.
+* Being verbose: start out by writing lots of explanation of what you uare doing and why. For example: "Now what we need to do is upper bound $\beta^2(x)$ by a constant that does not depend on $x$. There are two ways to do this: one by analyzing the recursion in \eqref{eq:recursion} and the other by doing a Taylor series expansion. Let's try the second approach first." That way when you go back to those notes later you will remember what you were thinking at the time. 
+
+
 
 ### Editing and rewriting
 
@@ -350,5 +464,5 @@ Think of the thesis as being read by a student with a Masters who wants to work 
 
 #### Common thesis mistakes
 
-* Check everywhere that you have "chapter" instead of "
+* Check everywhere that you have "chapter" instead of "paper". For example, "in this paper we show..." should become "in this chapter we show..."
 * Thesis pages are wider than journal/conference paper columns: you don't need to break equations weirdly to fit (as often). This is a danger when you cut-and-paste from the journal/conference paper.
