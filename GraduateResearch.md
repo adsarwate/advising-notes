@@ -27,22 +27,25 @@ A checklist:
 * Update your profile on LinkedIn
 * Create an ORCID
 
-You can do all of these in half an afternoon (at least a minimum). There is really no excuse to not doing this **immediately**.
+You can do all of these in a day (or even half a day). There is really no excuse to not doing this **immediately**.
 
 ### Create a homepage
 
-You should create a homepage for yourself. Why? That way you have a place to put your CV, links to projects and code, a description of your research, and other public-facing information about yourself. You don't have to list hobbies or the books you read or anything else that you don't feel like sharing. But having a homepage gives people wanting to know more about your research someplace to go. It is also important for internships -- companies will look at your website to see what you are doing.
+You should create a homepage for yourself. Why? That way you have a place to put your CV, links to projects and code, a description of your research, and other public-facing information about yourself. You don't have to list hobbies or the books you read or anything else that you don't feel like sharing. But having a homepage gives people wanting to know more about your research someplace to go. It is also important for internships -- companies will look at your website to see what you are doing. You don't have to have any publications yet!
 
-You can either host the website on a department or university server or make a site on Google Sites or some other web-based service.
+You have a couple of options:
 
-* An institutional website means you probably have to edit the HTML yourself, but there are lots of templates out there. Perhaps the most famous is [jemdoc](https://jemdoc.jaboc.net). It also has the advantage of being a familiar format that lots of people use.
-* Third-party hosting means your page will not die when you graduate but it (usually) gives you a little less control and makes you "less obviously" affiliated with your university.
+* host the website on a department or university server - you can hardcode the HTML (not advised, but this is what I have now due to legacy code) or use [Jekyll](https://jekyllrb.com/) or [Hugo](https://gohugo.io/) or [jemdoc](https://jemdoc.jaboc.net)
+* make a site on Google Sites
+* host a site on github.io (needs a github account)
 
-### Make a git repo
+### Make a github (or other) account
 
-It is very important to have a public repository of code from projects you have worked on. Perhaps you already have a git account on [GitHub](https://www.github.com/) or [GitLab](https://www.gitlab.com/): good for you! There are lots of reasons to have a repo:
+It is very important to have a public repository of code from projects you have worked on. Perhaps you already have a git account on [GitHub](https://www.github.com/) or [GitLab](https://www.gitlab.com/): good for you! 
 
-* If you write code for an algorithm you developed or a simulation from a paper, you should create a repo for the paper and post the code (including preprocessing) and data (or a link to the data if it's a public data set). This is part of doing reproducible research.
+We have a [lab site on GitLab](https://gitlab.com/sarwate_lab). You should ask for access if you haven't already. There are lots of reasons to have a repo:
+
+* If you write code for an algorithm you developed or a simulation from a paper, you should create a repo for the paper and post the code (including preprocessing) and data (or a link to the data if it's a public data set). This is part of doing reproducible research. The code should be hosted on the lab site, probably but you can link to it from your own site.
 * If you apply for an internship, companies will look at your git repos. If you have nothing there, they will think you have no skills: it looks bad! If you have no papers yet but some code from class projects, put up the code and project there. This shows that you know how to do things.
 * If you get a job in industry, chances are you will have to use git. You should be aware of how it works and how to use it in order to be more employable.
 * You can use the lab git repository and point to contribuutions you have made to research projects (e.g. the code from a paper) there.
@@ -51,9 +54,11 @@ Make sure you link to your git account from your homepage!
  
 ### Social media
 
-Social media is currently a totally optional thing -- lots of prominent researchers do not have Twitter accounts. However, if it is something you are comfortable with, you might consider creating a Twitter account to engage with other members of the academic community (and the public more broadly). The downsides are standard: social media can be a total waste of time and attention. The upsides are that you might get a better sense of what kind of research is interesting to people/generates a lot of attention.
+Social media is currently a totally optional thing -- lots of prominent researchers do not have Twitter accounts. However, if it is something you are comfortable with, you might consider creating a Twitter account to engage with other members of the academic community (and the public more broadly). The downsides are standard: social media can be a total waste of time and attention. Also looking at other people promoting their own research can make you feel bad about yourself/your own progress. The upsides are that you might get a better sense of what kind of research is interesting to people/generates a lot of attention.
 
 If you already have a Twitter handle, keep in mind that people who read your papers will automatically connect your Twitter handle with your role as a researcher. This is a hazard depending on what you do publicly on twitter.
+
+Full disclosure: I am trying to use Twitter less.
 
 ### Update LinkedIn
 
@@ -70,6 +75,8 @@ Many publication venues are now requring authors to link their papers with their
 You will want to make a resume or CV (see the [MIT Comm Lab's CommKit]
 (https://mitcommlab.mit.edu/nse/use-the-commkit/)) that you can update as you progress through grad school. A CV is more research-oriented, whereas a resume is more for looking for jobs/internships. Depending on the internship, they may prefer a CV. Sometimes you feel awkward making a CV before you have published anything, but having one there that you can add to is important.
 
+There are many CV templates on Overleaf so you can choose one which looks good to you.
+
 
 
 
@@ -77,19 +84,74 @@ You will want to make a resume or CV (see the [MIT Comm Lab's CommKit]
 
 ### Keeping track of your work
 
+What will not work very well is for you to think that you will just keep track of everything in your head. Give up that idea now. Likewise, having 500 notability PDFs with each day's notes will be hard to keep track of.
+
+I recommend having a notebook, either physical (yes, I'm old) or a LaTeX document where you can keep notes on your progress. Things you might consder:
+
+* A "diary" style where you write for each day the notes and can track what your current main tasks/objectives are and then document what you have done to reach those.
+
+* A project-based file where you have more detailed notes on a single project which you can rearrange as you go along. For example, you might structure it like a paper, putting maybe some stuff in a "related work" section, having a problem formulation section where you fix the notation and define the problem, and a "useful tools" section where you can put little lemmas, probability facts, concentration inequalities, etc. for easy access -- copying over from a paper you are reading can actually be helpful in undestanding -- as you rewrite their lemma using your notation you get a better sense of how to apply it.
+
+There are also tons of to-do list management tools out there and productivty philosophies if you want to read about those. Some combination of that advice might work for you.
+
+
+
 ### Time management
 
-Time management is a crucial skill, especially while managing
+Time management is a crucial skill!
 
 * [http://www.raulpacheco.org/tag/project-planning/](http://www.raulpacheco.org/tag/project-planning/)
 
+Grad school is tricky: you are a student but you are also an employee. You might have a family. Work-life balance is very important, so try to make sure you are keeping that balance in mind and don't ignore things like diet, exercise, sleep, and fun/relaxation. For some people different times of day may be better for different types of work: writing is a lot easier in the morning for me. For some people having a regular schedule is important: one friend in grad school who was married maintained a strict 8 AM - 4 PM schedule, while another liked to come in late, take a long break in the middle of the day to work out at the gym, and then stayed in lab until 9 or 10 PM. Find what works for you.
+
+It's very easy to lose track of time! One thing that can be helpful is to spend a week where you log your time (maybe even in 15 minute intervals). In the US, lawyers charge for their time in 6 minute increments, but that seems too fine-grained. This type of self montioring once might help you identify where you are spending your time. Maybe you will see a pattern or habit you want to change or you can think of a way to organize your time differently.
+
+There is more to write here but remember: any day in which you learn something new is a useful day. So try to make that the minimum target for each day. Learning new things is what research is all about!
 
 
-### Balancing coursework and research
+
+### Balancing coursework, teaching, and research
+
+This is tricky! Having clearly stated objectives and blocking off time for reseearch is critical. So when you sit down to do some research you can do something useful with that time. For example, your immediate task may be to read a paper and take notes, or to look up references for something, or to write some code.
+
+If you are a TA then beiing a TA is your job so you have to do a good job at it. That doesn't mean spending 30 hours per week on it -- the contract says you only have to work N hours per week (on average) so if you find yourself doing a lot more there is probably a problem that needs to get addressed.
+
+If you are taking classes then you should try to learn as much as you can in the classes. But that doesn't mean you should be spending 30 hours per week on a class: if it is too hard maybe it's not the right class, or if you are spending that much time maybe there is a more effective/efficient strategy. Just try to be mindful of how much time you are spending.
 
 ### Preparing for meetings
 
-### 
+Here is a set of questions to ask yourself before going into your weekly research meeting. It can help you clarify your objectives and what you want to get out of the meeting:
+
+* What were your main goals during this period?
+  * Be specific, e.g. 
+  * 1. Read paper X to understand Y, 
+  * 2. Find data sets and be able to load them in Python, 
+  * 3. write up the proof we discussed on the board
+* What did you do to achieve these goals?
+  * Use your notebook to help with this! For example:
+  * On Monday and Tuesday I read Lemmas 1-4 but didn't look at Y.
+  * Wednesday I had to work on a project for a class, but I downloaded the data sets
+  * Thursday I started writing up the proof but I got stuck. 
+  * On Friday and Saturday I was busy with family obligations because of a holiday.
+  * Sunday I loaded the dataset but there is some bug which I can't figure out yet.
+* Did you find something interesting or new?
+* If you got stuck, where did you get stuck?
+  * It's not enough to say "I'm stuck" -- you want to know why.
+  * Have some specific questions.
+  * Say what you tried to do that didn't work.
+  * The reasons for being stuck aren't always technical: maybe you are using the wrong search term, maybe you don't know where find the piece of math you need, or maybe you need to fix something with time management.
+* What approaches do you think might work?
+  * Identify possible sources of a solution -- better search terms, the right field of math or a introductory textbook, or getting a better sleep schedule.
+
+**After the meeting** you should also make some notes for yourself that will help you organize the next week.
+
+* What new things did I learn from this meeting?
+* What references/papers should I look at?
+* Are there directions that look more or less promising?
+* Are there short-term ways in which I should change how I work?
+* Are there long-term ways in which I should change how I work?
+* What are my new goals for this week?
+
 
 ## Research Skills
 
@@ -145,15 +207,17 @@ In what way is it similar? That sentence is almost meaningless.
 
 ### How to review a paper
 
-Chances are, once you have gotten a reasonable handle on research in an area and 
+Chances are, once you have gotten a reasonable handle on research in an area, you might be asked to review a paper.
 
-There is already lots of advice on how to write a review:
+There is already lots of advice on how to write reviews:
 
-**find from old emails**
+**NEED TO COMPILE THIS ADVICE**
 
 ### How to give a talk
 
-There is infinite advice out there on how to give good talks, as well as some pretty funny advice about how to not to give talks
+There is infinite advice out there on how to give good talks, as well as some pretty funny advice about how to not to give talks.
+
+**NEED TO WRITE THIS STILL**
 
 #### Conference talks
 
@@ -221,7 +285,7 @@ When preparing to do experiments:
 
 General writing advice:
 
-* Writing is hard! It is 99% rewriting. Be prepared for writing to take lots of time: more time than you think it should.
+	* Writing is hard! It is 99% rewriting. Be prepared for writing to take lots of time: more time than you think it should.
 * Read Harold Becker's Writing for Social Scientists (in the lab Google Drive or you can find it online). It says "for social scientists" but has a lot of general advice which can help when you are writing.
 * [Improving your academic writing: My top 10 tips](http://www.raulpacheco.org/2013/02/improving-your-academic-writing-my-top-10-tips/)
 * Get used to writing notes and other mini writeups in LaTeX. This will both help you get more proficient with LaTeX but also the act of writing down can help in trying to understand things. For example, suppose you want to use a theorem from some paper or book. Copy out the theorem and 
@@ -269,9 +333,9 @@ I learned many of the rules of mathematical writing from this handout from when 
 
 Mathematical writing is its own skill and it not the same writing that you would do on a homework or exam. This is often the hardest thing for graduate students to learn. It takes *practice*.
 
-If you plan to submit to a conference, use the template from the conference website. Templates change over time, sometimes in small ways, and the last thing you want is to have the server reject your PDF for some formatting violation caused by you using the previous year's template (this has happened to me).
+If you plan to submit to a conference, **use the template** from the conference website. Templates change over time, sometimes in small ways, and the last thing you want is to have the server reject your PDF for some formatting violation caused by you using the previous year's template (this has happened to me). Using the template also prevents some of the weird LaTeX compilation errors.
 
-Finally, remember that when you sit down to write, you're going to be doing a lot of editing and rewriting afterwards. Resist the urge to try and apply constraints or formatting hacks: save it for the editing stage. "Making it fit into the page limits" is something you can work on *after* your ideas are cleanly and clearly written.
+Finally, remember that when you sit down to write, you're going to be doing a lot of editing and rewriting afterwards. Resist the urge to try and apply constraints or formatting hacks: save it for the editing stage. "Making it fit into the page limits" is something you can work on *after* your ideas are cleanly and clearly written. Don't put any \vspace{-0.5cm} or stuff like that: focus on the *content*.
 
 Focus on getting the ideas you want to say in an order that would make sense to someone who doesn't know the problem you're working on. For example, imagine a classmate of yours from undergrad or grad school. I find outlining helps a lot, and then refining the outline with more and more details until you have manageable chunks that you can actually write.
 
@@ -301,9 +365,9 @@ The trick is to go systematically to make things fit. Work from the end of the d
 
 * Move material to the appendix or supplementary material.
 * Check if you have too much "navigation" text. Conference papers are short and do not need an "organization of this paper" section. Having text at the end of sections saying what is coming next or text at the start of a section summarizing the section is nice from a reading perspective but is not always necessary. It's easy to go too far in this direction, but often this is filler.
-* Edit your sentences to make them simpler. See some of the writing/editing tips and advice for this. There are a lot of "unnecessary words" that we all use when writing. This document is replete with them.
+* Edit your sentences to make them simpler. See some of the writing/editing tips and advice for this. There are a lot of "unnecessary words" that we all use when writing. For example, this document you are reading is too wordy and could uuse some editing. Read the writing guides for tips and tricks!
 * Move (some) equations in-line. It's easy to go overboard on this! Any time you want to move an equation from display mode to in-line, ask yourself how important that equation is and whether it will help the reader to see it displayed/centered versus in-line.
-* Manipulate figures. Shrinking figures is a way to get more space but make sure they are still legible/readable! Sometimes you might have an illustrative figure which helps the reader figure out what is going on: those are good targets for moving to an appendix or removing from the paper, especially if the space-to-benefit ratio is high.
+* Manipulate figures. Shrinking figures is a way to get more space but make sure they are still legible/readable! You might want to make the lines in the plot thicker to be easier to read. Sometimes you might have an illustrative figure which helps the reader figure out what is going on: those are good targets for moving to an appendix or removing from the paper, especially if the space-to-benefit ratio is high.
 
 ### Specific common issues
 
@@ -319,13 +383,14 @@ There are a couple of issues which are specific to technical writing. Here are s
 
 * If using "use" works where you wanted to write "utilize", then use "use" instead.
 * "upto" should be "up to"
-* It is tempting to add capitalization to things. Capitalization should be reserved for proper nouns and in particular, should not be used when talking about a definition of some mathematical property.  
+* It is tempting to add capitalization to things but is often not needed.  
 BAD: "the algorithm is $\epsilon$-Differentially Private", "we will use  Complex Analysis to solve this problem."   
 GOOD: "the algorithm is $\epsilon$-differentially private", "we will use complex analysis to solve this problem."
 * Look up what a "comma splice" is and avoid making them.
 
 #### Mathematical writing
 
+* See [this handy guide](https://math.mit.edu/~poonen/papers/writing.pdf).
 * "Consider that $X > 0$" should be "Assume that $X > 0$"
 * When citing a specific mathematical result, put in the reference to the specific result. For example:  
 `Using the Weierstrass Approximation` `Theorem~\cite[Lemma 3.2]{Rudin}`
@@ -342,10 +407,10 @@ GOOD: "Shah et al. [1] showed that A = B."
 * Keep a clean and consistent bibliography
   * Make sure all authors are listed. Check to make sure you have all accents in names! That is part of spelling the name correctly.
   * Either abbreviate **all** journal/conference titles or write all of them out in full.
-  * Check titles for proper nouns! Unless you write "{Gaussian}" or "{G}aussian", LaTeX will render the it as "gaussian." This also holds for acronyms, so "{PCA}" and "{fMRI}" not "PCA" and "fmri". 
+  * Check titles for proper nouns! Unless you write "{Gaussian}" or "{G}aussian", LaTeX will render the it as "gaussian." This also holds for acronyms, so "{PCA}" and "{fMRI}" not "PCA" and "fMRI". 
   * Don't use "Signal Processing, IEEE Transactions on" but instead use "IEEE Transactions on Signal Processing"
-  * Make sure you get page numbers if there are any: many publishers will ask you to put them in anyway so doing it ahead of time saves time.
-  * By default sure you include a URL in the BibTeX. They can be removed later.
+  * Make sure you get page numbers if there are any: many publishers will ask you to put them in anyway so doing it ahead of time saves time later.
+  * By default sure you include a URL in the BibTeX. They can be removed later if you need the space.
   * [Follow Prof. John D. Owens's advice](https://www.ece.ucdavis.edu/~jowens/biberrors.html)
 
 
@@ -433,7 +498,7 @@ So we can see
   \end{align}
 ```
   
-These two will look the same, but the latter is easier to read and edit.
+These two will look the same, but the latter is easier to read and edit. This is a matter of taste, but if you are writing with other people (e.g. your advisor) it helps to make the code easier to read.
 
 
 ### References and citations
@@ -441,6 +506,10 @@ These two will look the same, but the latter is easier to read and edit.
 * BibTeX and citation best practices
 	* Use BibDesk (Mac) or JabRef (Windows) or a related tool
 	* Possibly think of switching to BibLaTeX (may not be good for IEEE though)
+
+* When referring to theorems, sections, etc, capitalize them.   
+BAD: "we use theorem \ref{thm:upperbound} from section \ref{sec:bounds}"   
+GOOD: "we use Theorem \ref{thm:upperbound} from Section \ref{sec:bounds}" 
 	
 #### Internal references
 
@@ -452,11 +521,12 @@ Use `\label` and `\ref` for internal references -- don't use static equation num
 The thesis/dissertation is what you produce at the end of your Ph.D. as public proof that you have advanced human knowledge in some area through the work you have done in the last few years. It also is evidence that 
 you have become an expert in an area of study. 
 
-Some fields/advisors believe that it is ok to have a "staple thesis": just staple three papers together and turn it in. Sometimes this is literatl -- an economics thesis from MIT even restarted page numbers with each chapter. However, a more conventional approach is to treat the thesis as a *synthesis* and *more fully explained* version of your research work. Not every paper of yours has to be crammed into the thesis.
+Some fields/advisors believe that it is ok to have a "staple thesis": just staple three papers together and turn it in. Sometimes this is literal -- an economics thesis I saw from MIT even restarted page numbers with each chapter and had separate bibliographies per chapter. However, a more conventional approach is to treat the thesis as a *synthesis* and *more fully explained* version of your research work. Not every paper of yours has to be crammed into the thesis.
 
 Think of the thesis as being read by a student with a Masters who wants to work in this area. Your thesis should give them a good sense of:
 
 * *What is the general state of known results and how did this area come about?* You want to both address the history of the field/problem and the specific recent advances to properly contextualize your own contribution. This is a more comprehensive and deeper literature review than you can plausibly fit into a paper. A good literature review is itself a research contribution: the student who reads your thesis next will really get a good sense of the field.
+* (add more here)
 
 
 ### Advice when it comes time to write

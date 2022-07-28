@@ -1,0 +1,95 @@
+% margins and fonts
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{libertinus}
+\usepackage[T1]{fontenc}
+%\usepackage[noTeX]{mmap} % better ligatures and unicode
+
+
+% math fonts etc
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools} % for xlongleftrightarrow
+\usepackage{mleftright}  % fixes some annoying spacing issues
+\usepackage{bm} % boldface math
+
+% graphics and figures
+\usepackage{xcolor,graphicx}
+%\usepackage{tikz,tkz-euclide}
+%\usetikzlibrary{backgrounds, shapes.symbols, patterns, arrows}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+\usepackage{float,subfigure}
+
+% customized environments
+\usepackage[shortlabels]{enumitem}
+\usepackage{mdframed}
+\usepackage[breakable]{tcolorbox}
+
+
+
+
+% Bibliography stuff, citations, etc.
+\usepackage[bibstyle=numeric,backend=biber]{biblatex}
+\definecolor{OI-vermillion}{RGB}{213,94,0}
+\usepackage[colorlinks=true,citecolor=OI-vermillion,urlcolor=OI-vermillion]{hyperref}
+\usepackage[nameinlink]{cleveref}
+
+% theorems etc (also  problems)
+\usepackage{thmtools}
+\usepackage{thm-restate}
+\declaretheorem[name=Definition,numberwithin=section]{definition}
+\declaretheorem[name=Theorem,numberwithin=section]{theorem}
+\declaretheorem[name=Lemma,sibling=theorem]{lemma}
+\declaretheorem[name=Proposition,sibling=theorem]{proposition}
+\declaretheorem[style=remark]{remark}
+\declaretheorem[name=Claim]{claim}
+\declaretheorem[name=Conjecture]{conjecture}
+\declaretheorem[name=Problem]{problem}
+
+
+
+
+% Standard handout
+\newcommand{\handout}[5]{%
+{\parindent 0pt
+#1 \hfill #2 \\
+#3 \hfill #4} \\
+\begin{center}
+\hrule\vspace*{10pt}
+{#5}
+\vspace*{10pt}\hrule
+\end{center}
+\vspace*{.5cm}}
+
+\newcommand{\sect}[1]{
+\vspace*{12pt}
+\noindent \mbox{\large #1}}
+
+
+
+
+% header environment
+\newmdenv[backgroundcolor=white,leftline=false,rightline=false,leftline=false]{header}
+
+% example environment
+\newmdenv[backgroundcolor=blue!3,frametitle={Example:}]{example}
+
+% warning environment
+\newmdenv[backgroundcolor=red!3,frametitle={Note:}]{note}
+
+% solution environment
+\newmdenv[
+        linewidth=1pt,%
+        backgroundcolor=black!3
+        ]
+    {sol}
+\newenvironment{solution}[1][]
+    {\begin{sol}[frametitle={Solution authored by #1}]}
+    {\end{sol}}
+
+
+% rubric environment
+\newmdenv[backgroundcolor=yellow!30,frametitle={Rubric:}]{rubric}
+
+% toggles/cases
+%\newtoggle{solution}
+%\newtoggle{booklet}
