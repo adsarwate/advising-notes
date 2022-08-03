@@ -82,9 +82,22 @@ There are many CV templates on Overleaf so you can choose one which looks good t
 
 ## Getting organized
 
+### Resources
+
+Here are forms that you can fill out before and after research meetings with your advisor. 
+
+* [Pre-meeting form](https://www.overleaf.com/read/xkvnfjpbptkg)
+* [Post-meeting form](https://www.overleaf.com/read/htcxqtdxrbgm)
+
+I think that filling out the post-meeting form the **same day as a meeting** can help you get planning for the week ahead (maybe you change it a little as you go). Sending the pre-meeting form **the day before your meeting** helps use the meeting time to focus on what you want to discuss.
+
+Overall, the goal is to develop self-reflection processes which help you check in with how you are doing/working. It may take a little longer to write these the first few times you do it but it will become faster and easier once you get the hang of it. Ultimately, the most transferrable skill you get from doing a graduate thesis (MS or PhD) is the ability self-organize to finish a big project.
+
+One by-product of using these forms is a better sense of how you spend your time. This is **not** about needing to spend more time working or in lab, but about how you use your time. You can start to see patterns (good and bad) in how you work: maybe trying to read new papers in the morning works best for you, or you have to budget more time for writing code because you’re not very fast at it. You can see what works and doesn’t work for you and make adjustments. 
+
 ### Keeping track of your work
 
-What will not work very well is for you to think that you will just keep track of everything in your head. Give up that idea now. Likewise, having 500 notability PDFs with each day's notes will be hard to keep track of.
+What will not work very well is for you to think that you will just keep track of everything in your head. Give up that idea now. Likewise, having 500 Notability PDFs with each day's notes will be hard to keep track of.
 
 I recommend having a notebook, either physical (yes, I'm old) or a LaTeX document where you can keep notes on your progress. Things you might consder:
 
@@ -102,7 +115,7 @@ Time management is a crucial skill!
 
 * [http://www.raulpacheco.org/tag/project-planning/](http://www.raulpacheco.org/tag/project-planning/)
 
-Grad school is tricky: you are a student but you are also an employee. You might have a family. Work-life balance is very important, so try to make sure you are keeping that balance in mind and don't ignore things like diet, exercise, sleep, and fun/relaxation. For some people different times of day may be better for different types of work: writing is a lot easier in the morning for me. For some people having a regular schedule is important: one friend in grad school who was married maintained a strict 8 AM - 4 PM schedule, while another liked to come in late, take a long break in the middle of the day to work out at the gym, and then stayed in lab until 9 or 10 PM. Find what works for you.
+Grad school is tricky: you are a student but you are also an employee. You might have a family. Work-life balance is very important, so try to make sure you are keeping that balance in mind and don't ignore things like diet, exercise, sleep, and fun/relaxation. For some people different times of day may be better for different types of work: writing is a lot easier in the morning for me. For some people having a regular schedule is important: one friend in grad school maintained a strict 8 AM - 4 PM schedule, while another liked to come in late, take a long break in the middle of the day to work out at the gym, and then stayed in lab until 9 or 10 PM. Find what works for you.
 
 It's very easy to lose track of time! One thing that can be helpful is to spend a week where you log your time (maybe even in 15 minute intervals). In the US, lawyers charge for their time in 6 minute increments, but that seems too fine-grained. This type of self montioring once might help you identify where you are spending your time. Maybe you will see a pattern or habit you want to change or you can think of a way to organize your time differently.
 
@@ -120,7 +133,7 @@ If you are taking classes then you should try to learn as much as you can in the
 
 ### Preparing for meetings
 
-Here is a set of questions to ask yourself before going into your weekly research meeting. It can help you clarify your objectives and what you want to get out of the meeting:
+Here is a set of questions to ask yourself before going into your weekly research meeting. It can help you clarify your objectives and what you want to get out of the meeting. These are also captured in the pre-meeting form.
 
 * What were your main goals during this period?
   * Be specific, e.g. 
@@ -161,10 +174,18 @@ There are a lot of different concrete skills that you (should) develop as a grad
 
 There is already lots of advice on how to read papers out there. I think the first thing to decide is what kind of reading are you going to do? That is, you have to figure out what you want to learn from the paper.
 
-* What is this area of research about?  Then you can read the introduction and skim the experiments if there are any. 
+* What is this area of research about?  Then you can read the introduction, conclusion, and skim the rest perhaps.
 * How do they formulate their problem mathematically? You should read the intro (maybe skim some of it/read it later) and definitely read the model, problem statement, or whatever that section is called.
 * What does this paper show? Read all of the above as well as the main results (but not the proofs). Focus on trying to understand what the results mean.
 * How do they prove their results? In this case you want to focus on the proofs at least at the proof sketch level or even better, line by line. Try to make sure you can understand each step, or ask for help!
+
+Always read with an objective in mind:
+
+* *I want to learn something new.* Read and take a few notes so you remember!
+* *I want to come up with a better formulation of my problem.* Try and translate that paper's notation into your own notation.
+* *I need a tool to help my proof.* Copy out the lemma or theorem. Where can it apply in your problem? Does your problem satisfy all the conditions?
+* *I want to see what experiments to run.* Find out where to get the data sets. Does the paper have a code repo? Are there already preprocessing scripts out there?
+* *I need to find more references on this topic.* Look at the related work. Maybe you are doing a literature search (see below).
 
 ### How to do a literature search
 
@@ -221,11 +242,15 @@ There is infinite advice out there on how to give good talks, as well as some pr
 
 #### Conference talks
 
+**NEED TO WRITE THIS STILL**
+
 #### Group meeting/lab talks
+
+**NEED TO WRITE THIS STILL**
 
 #### Seminar talks
 
-
+**NEED TO WRITE THIS STILL**
 
 ## Software and tools
 
@@ -235,15 +260,18 @@ In addition to having a homepage and a git repo, there are a number of other pie
 
 You should end up reading a **lot** of papers in grad school. You need to figure out how to organize them! There are quite a few tools out there:
 
-* Zotero: an open-source bibliography management tool with web browser plug-ins so you can create an entry from data scraped from the paper's website.
-* Mendeley: I used to like this, but they were bought by Elsevier, which is evil, so I no longer recommend it.
+* [Zotero](https://www.zotero.org/) helps manage papers and references (like iTunes for your research papers). It's ope-source There are browser plugins that let you grab the PDF and citation information from the website of a paper.
 * Many BibTeX or BibLaTeX managers (e.g. BibDesk on Mac OS) have a "notes" feature or something where you can type in some quick notes associated to the bib entry.
+
+If you read a paper and find it remotely interesting or helpful, get the bibliography entry for it. **NOTE:** Zotero, if you use it, will generate .bib files for use with LaTeX. Chances are that they will not be formatted properly and your bibliography will look messy when compile. So you need to manually fix those .bib entries.
+
+There are many issues that come up in bibliographies: John Owens [has a whole webpage of them](https://www.ece.ucdavis.edu/~jowens/biberrors.html).
 
 It helps to have some sort of "diary" or other way of keeping a log of what you've been reading and what the main points of the paper were, things that were interesting or confusing, and things that you might want to follow up on. For the last thing, it could be some problem the paper left unanswered (maybe you can answer it) or some new analysis/technique you might want to learn, or just that you need to cite this paper when working on this problem.
 
 ### Programming
 
-If you are an EE student, chances are you have done a lot of your programming in MATLAB. While lots of places still use MATLAB, you are better off learning Python, and particular using `numpy` and `scipy` for simulations. If you are doing large-scale nachine learning (e.g. deep learning) you might want to learn how to use [PyTorch](https://pytorch.org) or [TensorFlow](https://www.tensorflow.org/). Download [Jupyter](https://jupyter.org) so you can make interactive Python `.ipython` notebooks -- this is a good way to keep track of code and notes, since the notebooks support LaTeX markup.
+If you are an EE student, chances are you have done a lot of your programming in MATLAB. While lots of places still use MATLAB, you are better off learning Python, and particular using `numpy` and `scipy` for simulations.  Most people I know use [Anaconda](https://www.anaconda.com/products/distribution) with Spyder. If you are doing large-scale nachine learning (e.g. deep learning) you might want to learn how to use [PyTorch](https://pytorch.org) or [TensorFlow](https://www.tensorflow.org/) or [JAX](https://github.com/google/jax). Download [Jupyter](https://jupyter.org) so you can make interactive Python `.ipython` notebooks -- this is a good way to keep track of code and notes, since the notebooks support LaTeX markup. If you install python using 
 
 Another language you can learn (especially if you think you might be engaging seriously with the statistics literature) is `R`. The syntax is very similar to MATLAB (and in particular matrix multiplication, which is ugly in Python, is more MATLAB-like in `R`). There is a very active open-source development base for `R` and many statistics papers come with an `R` package that you can install and use to test/apply the methods.
 
@@ -285,7 +313,7 @@ When preparing to do experiments:
 
 General writing advice:
 
-	* Writing is hard! It is 99% rewriting. Be prepared for writing to take lots of time: more time than you think it should.
+* Writing is hard! It is 99% rewriting. Be prepared for writing to take lots of time: more time than you think it should.
 * Read Harold Becker's Writing for Social Scientists (in the lab Google Drive or you can find it online). It says "for social scientists" but has a lot of general advice which can help when you are writing.
 * [Improving your academic writing: My top 10 tips](http://www.raulpacheco.org/2013/02/improving-your-academic-writing-my-top-10-tips/)
 * Get used to writing notes and other mini writeups in LaTeX. This will both help you get more proficient with LaTeX but also the act of writing down can help in trying to understand things. For example, suppose you want to use a theorem from some paper or book. Copy out the theorem and 
@@ -322,6 +350,8 @@ There is a ton of advice out there on editing and writing. Here are a few refere
 * Howard S. Becker, Writing for Social Scientists, University of Chicago Press, 2007.  
 You may think that this is not a book engineers need to read but it has lots of great advice about the writing process, especially in the first few chapters.
 
+For some very specific advice (big and small) regarding mathematical writing, see the tips section of [this overleaf template](https://www.overleaf.com/read/hczfttksjhqs)
+
 
 #### Starting out
 
@@ -341,7 +371,7 @@ Focus on getting the ideas you want to say in an order that would make sense to 
 
 #### Editing
 
-Once you get the ideas in the right order, the technical material written, and the major issues out of the way, it may come time to "polish" the manuscript. What I call "polishing" is an iterative process to edit and improve the manuscript.
+Once you get the ideas in the right order, the technical material written, and the major issues out of the way, it may come time to "polish" the manuscript. What I call "polishing" is an iterative process to edit and improve the manuscript. 
 
 #### Final checks
 
@@ -531,6 +561,7 @@ Think of the thesis as being read by a student with a Masters who wants to work 
 
 ### Advice when it comes time to write
 
+**NEEDS TO BE WRITTTEN**
 
 #### Common thesis mistakes
 
