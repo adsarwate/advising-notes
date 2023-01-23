@@ -112,11 +112,13 @@ One by-product of using these forms is a better sense of how you spend your time
 
 What will not work very well is for you to think that you will just keep track of everything in your head. Give up that idea now. Likewise, having 500 Notability PDFs with each day's notes will be hard to keep track of.
 
-I recommend having a notebook, either physical (yes, I'm old) or a LaTeX document where you can keep notes on your progress. Things you might consder:
+I recommend having a notebook, either physical (yes, I'm old) or a single document where you can keep notes on your progress. Things you might consder:
 
 * A "diary" style where you write for each day the notes and can track what your current main tasks/objectives are and then document what you have done to reach those.
 
 * A project-based file where you have more detailed notes on a single project which you can rearrange as you go along. For example, you might structure it like a paper, putting maybe some stuff in a "related work" section, having a problem formulation section where you fix the notation and define the problem, and a "useful tools" section where you can put little lemmas, probability facts, concentration inequalities, etc. for easy access -- copying over from a paper you are reading can actually be helpful in undestanding -- as you rewrite their lemma using your notation you get a better sense of how to apply it.
+
+* A slide deck that grows over time where you can document each day, findings, etc. This is a low-effort way to log figures and experiment settings etc. The bad thing is to have all pictures and no text. You need to have words so that one month later (or even 2 days later) you can remember what the heck you were doing at the time.
 
 There are also tons of to-do list management tools out there and productivty philosophies if you want to read about those. Some combination of that advice might work for you.
 
@@ -319,7 +321,7 @@ When preparing to do experiments:
 * Determine how to visualize your results.
 * Interpret your results (e.g. answer the question).
 
-
+As with your research notes (see above), a slide deck that grows over time where you can document each day, findings, etc. in your experiments can be really helpful. As before, make sure you have lots of text in there too so that you know what you are thinking and what worked and didn't work and what makes sense and doesn't make sense. You don't have to share these slides with anyone. They are for you alone so you can treat it almost like a diary.
 
 
 ## Writing tips
