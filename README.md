@@ -24,8 +24,7 @@ This is very much a work in progress and some stuff has yet to be written. If yo
 
 ## External resources
 
-* [MIT Comm Lab's CommKit]
-(https://mitcommlab.mit.edu/nse/use-the-commkit/)
+* [MIT Comm Lab's CommKit](https://mitcommlab.mit.edu/nse/use-the-commkit/)
 * [Improving your academic writing: My top 10 tips](http://www.raulpacheco.org/2013/02/improving-your-academic-writing-my-top-10-tips/)
 
 ## Stuff to be added/written still
