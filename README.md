@@ -11,7 +11,7 @@ Things I'm not going to talk about:
 
 This is very much a work in progress and some stuff has yet to be written. If you have some suggestions, please email me.
 
-## Some links to things which may or may not be written yet
+## Some writeups
 
 * [Professionalization](ProfessionalStuff.md): getting started and getting your presence as a researcher
 * [Tools and software](Tools.md): useful tools for your research
@@ -19,7 +19,8 @@ This is very much a work in progress and some stuff has yet to be written. If yo
 * [Organizing your research](OrganizingWork.md): how to track and maintain progress. Here are two forms for pre-meeting and post-meetings to help keep research progress on track.
    * [Pre-meeting form](PreMtgForm.md)
    * [Post-meeting form](PostMtgForm.md)
-* [Reading papers and literature search](ReadingSkills.md): the many ways to read a paper and how to search for literature
+* [Reading papers and literature search](ReadingSkills.md): the many ways to read a paper, how to do a literature search, and so on
+* [Reviewing papers](Reviewing.md): relatedly, how to do peer review
 * [Running computational experiments](Experiments.md): still a work in progress
 
 ## External resources
