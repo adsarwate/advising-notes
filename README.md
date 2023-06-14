@@ -2,7 +2,7 @@
 
 ##### an idiosyncratic take by Anand D. Sarwate
 
-These are some notes and miscellaneous items about skills and tips for success in research (and beyond!). It is (a) not comprehensive and (b) very idiosyncratic. It will hopefully get more organized and filled in over time. Rather than a monolihic document, things will be split up into subfiles for easier consumption.
+These are some notes and miscellaneous items about skills and tips for success in research (and beyond!). It is (a) not comprehensive and (b) very idiosyncratic. It will hopefully get more organized and filled in over time. Rather than a monolithic document, things will be split up into subfiles for easier consumption.
  
 Things I'm not going to talk about:
 
