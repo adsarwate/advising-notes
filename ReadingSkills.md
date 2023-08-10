@@ -25,7 +25,7 @@ One way to start is to pick a paper that you know is on the topic and read the i
 
 Another good option is to see what papers cite the paper you found by looking in Google Scholar for example. Then you can find later papers which cite the paper you are looking at. Some will seem relevant and some will be irrelevant. Download the relevant ones and do the same search procedure on them by reading the related work.
 
-How do you decide whether to include a paper in your search? You want to search broadly but you need to categorize the papers so that you can start organizing the citations by what the papers talk about. You might have one category of primarily experimental papers, one category for theoretical analyses, one category for applications to diffent problems, and so on. Or you might have papers which are written by statisticians versus those written by electrical engineers which don't seem to cite each other but are looking at similar problems.
+How do you decide whether to include a paper in your search? You want to search broadly but you need to categorize the papers so that you can start organizing the citations by what the papers talk about. You might have one category of primarily experimental papers, one category for theoretical analyses, one category for applications to different problems, and so on. Or you might have papers which are written by statisticians versus those written by electrical engineers which don't seem to cite each other but are looking at similar problems.
 
 Some questions to help you organize your thinking around a paper you are looking at are given below. These are not exhaustive but should give you a sense of the kind of questions you should be asking before and as you read.
 
@@ -44,13 +44,13 @@ Once you have your pile of papers and notes on the papers, you have to organize 
 
 Finally, take notes on each of the papers, and add the references to a BibTeX file so you can write up a summary. Start by writing little chunks of summary tying things togeher. For example: 
 
-> *"the problem was first studied by Johnson [1] and sparked new work in both the physics and engineeing communities. Physicists [2-4] used statistical mechanics to understand the phenomena in very large systems. The recent survey paper by Gentile et al. [5] describes this body of research in great detail. On the engineering side, separate work by Horn and Kay [6] and Sastry et al. [7] showed that for smaller systems one could observe coupling between individual components..."* 
+> *"the problem was first studied by Johnson [1] and sparked new work in both the physics and engineering communities. Physicists [2-4] used statistical mechanics to understand the phenomena in very large systems. The recent survey paper by Gentile et al. [5] describes this body of research in great detail. On the engineering side, separate work by Horn and Kay [6] and Sastry et al. [7] showed that for smaller systems one could observe coupling between individual components..."* 
 
 Then you might have a separate section which addresses experimental or algorithmics work. And so on.
 
 Eventually you have enough fragments to try and organize them into a story. Think of how you would explain the problem to your friend and all the work that has been done. You can't do it by talking about random papers, but instead talk about different dimensions of the problem and what work has been done in those directions.
 
-If this literature review is part of a related work section for a  paper you are wriing, then you need to describe what the paper does, what it doesn't do, and what your paper does differently. You should never (if you can avoid it) write a sentence like 
+If this literature review is part of a related work section for a  paper you are writing, then you need to describe what the paper does, what it doesn't do, and what your paper does differently. You should never (if you can avoid it) write a sentence like 
 
 > *Patel et al. studied a similar problem [1]*. 
 

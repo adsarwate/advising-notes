@@ -12,7 +12,7 @@ It's important to gain both breadth and depth in grad school. **write more stuff
 You should plan to go to lots of talks! At first, the talks will be confusing because you don't know as much about research. But later on you will start to understand more and more. There are many benefits of going to talks on topics that are not **only about your research**:
 
 * Being aware of what other work is out there is part of general scientific literacy: if you go to an interview and have only learned about some tiny narrow thing, the interviewer will think that you are too specialized and can't learn new things.
-* The greatest asset to a researcher is curiousity. If something about a talk sounds interesting, then go to it! You will always learn something and any day you learn something new is a good day.
+* The greatest asset to a researcher is curiosity. If something about a talk sounds interesting, then go to it! You will always learn something and any day you learn something new is a good day.
 * Ideas from other fields can help you with your problem: maybe there are connections you didn't know existed, or a whole area of research which is interesting and related to what you are working on.
 
 At Rutgers, here are some seminars of interest:
