@@ -23,11 +23,12 @@ Reviewing is one of the many ways to read a paper. Both conference and journal p
 
 Even as an expert, there will be things in the paper you are reviewing which are not obvious to you, totally new to you, or are subtly wrong in a way that is hard to detect. This is why it takes some time to write a thorough review.
 
-There are tons of guides to writing revews out there (from various publishers) so rather than rehash those, I'll focus on some dos and don'ts. A good starting point is this paper: 
+There are tons of guides to writing revews out there (from various publishers) so rather than rehash those, I'll focus on some dos and don'ts. A good starting point are these papers: 
 
 * Graham Cormode, [How NOT to review a paper: the tools and techniques of the adversarial reviewer](https://dl.acm.org/doi/abs/10.1145/1519103.1519122), ACM SIGMOD Record 37(4), 2009. 
+* Peter Sewell, [Bad Reasons to Reject Good Papers, and Vice Versa](https://cacm.acm.org/blogs/blog-cacm/267440-bad-reasons-to-reject-good-papers-and-vice-versa/fulltext)
 
-This is an entertaining read focused on computer science reviewing but I think gets the point across pretty well. 
+The first is an entertaining read focused on computer science reviewing but I think gets the point across pretty well. The second has some more specific advice, written by a researcher in programming languages. 
 
 It's common to complain about reviewers not understanding your paper or that they wrote a very short and not-useful review. Your goal should be to write a review that people won't complain about.
 
