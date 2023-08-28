@@ -24,6 +24,7 @@ When preparing to do experiments:
 
 As with your research notes (see above), a slide deck that grows over time where you can document each day, findings, etc. in your experiments can be really helpful. As before, make sure you have lots of text in there too so that you know what you are thinking and what worked and didn't work and what makes sense and doesn't make sense. You don't have to share these slides with anyone. They are for you alone so you can treat it almost like a diary.
 
-When writing your experiments section in a paper, it can "write itself" in the form:
+When writing your experiments section in a paper or poster, it can "write itself" in the form:
 
-* **Our question.** In order to understand this we **ran this experiment**. The results are shown in Figure 5, which plots **the visualization we used for the result**. As we can see **this answers our question in the following way**.
+* *For a paper:* **Our question.** In order to understand this we **ran this experiment**. The results are shown in Figure 5, which plots **the visualization we used for the result**. As we can see **this answers our question in the following way**.
+* *For a poster:* You can write the question, show the plot, and give the conclusion all together and when presenting the poster describe the experiment in more detail (or put the details on the poster if it's simple). Use descriptive legends and header text!
