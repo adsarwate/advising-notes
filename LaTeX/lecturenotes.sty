@@ -1,0 +1,856 @@
+%%% adslecturenotes.sty
+%%%
+%%% Collection of macros for course notes.
+%%% August 2023: Anand Sarwate (anand.sarwate@rutgers.edu)
+%%%
+%%% just add \usepackage{adslecturenotes} in the preamble
+%%% be sure to check that your macros are not already defined here 
+\ProvidesPackage{adslecturenotes}
+
+%%%
+%%% Useful Packages
+%%%
+% FONTS
+\RequirePackage{libertinus}
+\RequirePackage[T1]{fontenc}
+\RequirePackage{url}
+\RequirePackage{underscore}
+\RequirePackage{verbatim}
+
+% math fonts etc
+\RequirePackage{amsmath,amssymb,amsthm}
+\RequirePackage{mathtools} % for xlongleftrightarrow
+\RequirePackage{mleftright}  % fixes some annoying spacing issues
+\RequirePackage{bm,bbm} % boldface math
+\RequirePackage{thmtools}
+\RequirePackage{thm-restate}
+\RequirePackage{siunitx}
+
+% graphics and figures
+\RequirePackage{xcolor,graphicx}
+\RequirePackage{pgfplots}
+\RequirePackage{float}
+\RequirePackage{wrapfig}
+\RequirePackage{epstopdf}
+\RequirePackage[font=footnotesize,it,bf]{caption}
+\RequirePackage{subcaption}
+%% Figures made easy -- no caption
+\newcommand{\insertfig}[2]{\begin{center}%
+\includegraphics[width=#1 \textwidth]{#2}%
+\end{center}}
+
+%% Okabe-Ito Color Universal Design
+%% https://jfly.uni-koeln.de/color/
+\definecolor{OI-black}{RGB}{0,0,0}
+\definecolor{OI-orange}{RGB}{230,159,0}
+\definecolor{OI-lightblue}{RGB}{86,180,233}
+\definecolor{OI-green}{RGB}{0,158,115}
+\definecolor{OI-yellow}{RGB}{240,228,66}
+\definecolor{OI-blue}{RGB}{0,114,178}
+\definecolor{OI-vermillion}{RGB}{213,94,0}
+\definecolor{OI-purple}{RGB}{204,121,167}
+
+% customized environments
+\RequirePackage[compact]{titlesec}
+\RequirePackage[shortlabels]{enumitem}
+\RequirePackage{etoolbox}
+\RequirePackage{mdframed}
+\RequirePackage[breakable]{tcolorbox}
+\RequirePackage{multirow}
+\RequirePackage{array}
+\RequirePackage[normalem]{ulem} %for \sout strikeout command
+
+% MATLAB
+\usepackage{bigfoot} % allows verbatim in footnotes
+\usepackage[framed,numbered]{matlab-prettifier}
+
+% BIB STUFF
+\usepackage[bibstyle=numeric,backend=biber,maxcitenames=3,maxbibnames=100,giveninits=true]{biblatex}
+\definecolor{OI-vermillion}{RGB}{213,94,0}
+\usepackage[colorlinks=true,citecolor=OI-vermillion,urlcolor=OI-vermillion,linkcolor=OI-blue]{hyperref}
+\usepackage[nameinlink]{cleveref}
+
+
+
+
+%%%
+%%% Page sizing
+%%%
+\newif\if@txtables\@txtablesfalse
+\DeclareOption{txtables}{\@txtablestrue}
+\DeclareOption*{\OptionNotUsed}
+\ProcessOptions\relax
+\if@txtables 
+  \RequirePackage[margin=0.75in]{geometry}
+\else
+  \RequirePackage[margin=1in]{geometry}%% the default
+\fi
+
+% WORD STUFF
+
+%% Language macros
+\newcommand{\Ie}{\textit{i.e., }}
+\newcommand{\Eg}{\textit{e.g., }}
+
+% Hungarians
+\newcommand{\komlos}{Koml\'os} 
+\newcommand{\csiszar}{Csisz\'ar}
+\newcommand{\turan}{Tur\'an}
+
+
+
+%%%
+%%%  Teaching environments
+%%%
+
+% Standard handout
+\newcommand{\handout}[5]{%
+{\parindent 0pt
+#1 \hfill #2 \\
+#3 \hfill #4} \\
+\begin{center}
+\hrule\vspace*{10pt}
+{#5}
+\vspace*{10pt}\hrule
+\end{center}
+\vspace*{.5cm}}
+
+\newcommand{\sect}[1]{
+\vspace*{12pt}
+\noindent \mbox{\large #1}}
+
+% header environment
+\newmdenv[backgroundcolor=white,leftline=false,rightline=false,leftline=false]{header}
+
+% example environment
+\newmdenv[backgroundcolor=blue!3,frametitle={Example:}]{example}
+
+% warning environment
+\newmdenv[backgroundcolor=red!3,frametitle={Note:}]{note}
+
+% colored box for problems
+%\newmdenv[backgroundcolor=OI-lightblue!10,innertopmargin=0pt]{problembox}
+%\newenvironment{problem}[1][]{\begin{problembox}\begin{exercise}[#1]}{\end{exercise}\end{problembox}}
+%\newenvironment{problem}[1][]{\problembox\exercise[#1]}{\endexercise\endproblembox}
+
+
+% solution environment
+\newmdenv[backgroundcolor=black!5,frametitle={Solution:}]{sol}
+
+% rubric environment
+\newmdenv[backgroundcolor=OI-yellow!30,frametitle={Rubric:}]{rubric}
+
+% learn more environment
+\newmdenv[backgroundcolor=OI-yellow!20,frametitle={Learn more:}]{learnmore}
+
+
+% answer box
+\newcommand{\emptybox}[2][\textwidth]{%
+  \begingroup
+  \setlength{\fboxsep}{-\fboxrule}%
+  \noindent\framebox[#1]{\rule{0pt}{#2}}%
+  \endgroup
+}
+
+% toggles/cases
+\newtoggle{solution}
+\newtoggle{booklet}
+
+
+
+%%%
+%%% LETTERS 
+%%% 
+%%%
+%%% Macros for letters and stuff
+%%%
+% BLACKBOARD LETTER
+\newcommand{\bA}{\mathbb{A}}
+\newcommand{\bB}{\mathbb{B}}
+\newcommand{\bC}{\mathbb{C}}
+\newcommand{\bD}{\mathbb{D}}
+\newcommand{\bE}{\mathbb{E}}
+\newcommand{\bF}{\mathbb{F}}
+\newcommand{\bG}{\mathbb{G}}
+\newcommand{\bH}{\mathbb{H}}
+\newcommand{\bI}{\mathbb{I}}
+\newcommand{\bJ}{\mathbb{J}}
+\newcommand{\bK}{\mathbb{K}}
+\newcommand{\bL}{\mathbb{L}}
+\newcommand{\bM}{\mathbb{M}}
+\newcommand{\bN}{\mathbb{N}}
+\newcommand{\bO}{\mathbb{O}}
+\newcommand{\bP}{\mathbb{P}}
+\newcommand{\bQ}{\mathbb{Q}}
+\newcommand{\bR}{\mathbb{R}}
+\newcommand{\bS}{\mathbb{S}}
+\newcommand{\bT}{\mathbb{T}}
+\newcommand{\bU}{\mathbb{U}}
+\newcommand{\bV}{\mathbb{V}}
+\newcommand{\bW}{\mathbb{W}}
+\newcommand{\bX}{\mathbb{X}}
+\newcommand{\bY}{\mathbb{Y}}
+\newcommand{\bZ}{\mathbb{Z}}
+
+
+% BOLDFACE LOWERCASE
+
+\newcommand{\bfa}{\mathbf{a}}
+\newcommand{\bfb}{\mathbf{b}}
+\newcommand{\bfc}{\mathbf{c}}
+\newcommand{\bfd}{\mathbf{d}}
+\newcommand{\bfe}{\mathbf{e}}
+\newcommand{\bff}{\mathbf{f}}
+\newcommand{\bfg}{\mathbf{g}}
+\newcommand{\bfh}{\mathbf{h}}
+\newcommand{\bfi}{\mathbf{i}}
+\newcommand{\bfj}{\mathbf{j}}
+\newcommand{\bfk}{\mathbf{k}}
+\newcommand{\bfl}{\mathbf{l}}
+\newcommand{\bfm}{\mathbf{m}}
+\newcommand{\bfn}{\mathbf{n}}
+\newcommand{\bfo}{\mathbf{o}}
+\newcommand{\bfp}{\mathbf{p}}
+\newcommand{\bfq}{\mathbf{q}}
+\newcommand{\bfr}{\mathbf{r}}
+\newcommand{\bfs}{\mathbf{s}}
+\newcommand{\bft}{\mathbf{t}}
+\newcommand{\bfu}{\mathbf{u}}
+\newcommand{\bfv}{\mathbf{v}}
+\newcommand{\bfw}{\mathbf{w}}
+\newcommand{\bfx}{\mathbf{x}}
+\newcommand{\bfy}{\mathbf{y}}
+\newcommand{\bfz}{\mathbf{z}}
+
+% BOLDFACE CAPITAL
+\newcommand{\bfA}{\mathbf{A}}
+\newcommand{\bfB}{\mathbf{B}}
+\newcommand{\bfC}{\mathbf{C}}
+\newcommand{\bfD}{\mathbf{D}}
+\newcommand{\bfE}{\mathbf{E}}
+\newcommand{\bfF}{\mathbf{F}}
+\newcommand{\bfG}{\mathbf{G}}
+\newcommand{\bfH}{\mathbf{H}}
+\newcommand{\bfI}{\mathbf{I}}
+\newcommand{\bfJ}{\mathbf{J}}
+\newcommand{\bfK}{\mathbf{K}}
+\newcommand{\bfL}{\mathbf{L}}
+\newcommand{\bfM}{\mathbf{M}}
+\newcommand{\bfN}{\mathbf{N}}
+\newcommand{\bfO}{\mathbf{O}}
+\newcommand{\bfP}{\mathbf{P}}
+\newcommand{\bfQ}{\mathbf{Q}}
+\newcommand{\bfR}{\mathbf{R}}
+\newcommand{\bfS}{\mathbf{S}}
+\newcommand{\bfT}{\mathbf{T}}
+\newcommand{\bfU}{\mathbf{U}}
+\newcommand{\bfV}{\mathbf{V}}
+\newcommand{\bfW}{\mathbf{W}}
+\newcommand{\bfX}{\mathbf{X}}
+\newcommand{\bfY}{\mathbf{Y}}
+\newcommand{\bfZ}{\mathbf{Z}}
+
+% BOLDFACE GREEK LETTERS (LOWER AND UPPER)
+\newcommand{\bfalpha}{\boldsymbol{\alpha}}
+\newcommand{\bfAlpha}{\boldsymbol{\Alpha}}
+\newcommand{\bfbeta}{\boldsymbol{\alpha}}
+\newcommand{\bfBeta}{\boldsymbol{\Beta}}
+\newcommand{\bfgamma}{\boldsymbol{\gamma}}
+\newcommand{\bfGamma}{\boldsymbol{\Gamma}}
+\newcommand{\bfdelta}{\boldsymbol{\delta}}
+\newcommand{\bfDelta}{\boldsymbol{\Delta}}
+\newcommand{\bfepsilon}{\boldsymbol{\epsilon}}
+\newcommand{\bfZeta}{\boldsymbol{\Zeta}}
+\newcommand{\bfeta}{\boldsymbol{\eta}}
+\newcommand{\bftheta}{\boldsymbol{\theta}}
+\newcommand{\bfTheta}{\boldsymbol{\Theta}}
+\newcommand{\bfiota}{\boldsymbol{\theta}}
+\newcommand{\bfkappa}{\boldsymbol{\kappa}}
+\newcommand{\bflambda}{\boldsymbol{\lambda}}
+\newcommand{\bfLambda}{\boldsymbol{\Lambda}}
+\newcommand{\bfmu}{\boldsymbol{\mu}}
+\newcommand{\bfnu}{\boldsymbol{\nu}}
+\newcommand{\bfxi}{\boldsymbol{\xi}}
+\newcommand{\bfXi}{\boldsymbol{\Xi}}
+\newcommand{\bfpi}{\boldsymbol{\pi}}
+\newcommand{\bfPi}{\boldsymbol{\Pi}}
+\newcommand{\bfrho}{\boldsymbol{\rho}}
+\newcommand{\bfsigma}{\boldsymbol{\sigma}}
+\newcommand{\bfSigma}{\boldsymbol{\Sigma}}
+\newcommand{\bfphi}{\boldsymbol{\phi}}
+\newcommand{\bfPhi}{\boldsymbol{\Phi}}
+\newcommand{\bfchi}{\boldsymbol{\chi}}
+\newcommand{\bfChi}{\boldsymbol{\Chi}}
+\newcommand{\bfpsi}{\boldsymbol{\psi}}
+\newcommand{\bfPsi}{\boldsymbol{\Psi}}
+\newcommand{\bfomega}{\boldsymbol{\omega}}
+\newcommand{\bfOmega}{\boldsymbol{\Omega}}
+
+% CALLIGRAPHIC CAPITALS
+\newcommand{\cA}{{\mathcal A}}
+\newcommand{\cB}{{\mathcal B}}
+\newcommand{\cC}{{\mathcal C}}
+\newcommand{\cD}{{\mathcal D}}
+\newcommand{\cE}{{\mathcal E}}
+\newcommand{\cF}{{\mathcal F}}
+\newcommand{\cG}{{\mathcal G}}
+\newcommand{\cH}{{\mathcal H}}
+\newcommand{\cI}{{\mathcal I}}
+\newcommand{\cJ}{{\mathcal J}}
+\newcommand{\cK}{{\mathcal K}}
+\newcommand{\cL}{{\mathcal L}}
+\newcommand{\cM}{{\mathcal M}}
+\newcommand{\cN}{{\mathcal N}}
+\newcommand{\cO}{{\mathcal O}}
+\newcommand{\cP}{{\mathcal P}}
+\newcommand{\cQ}{{\mathcal Q}}
+\newcommand{\cR}{{\mathcal R}}
+\newcommand{\cS}{{\mathcal S}}
+\newcommand{\cT}{{\mathcal T}}
+\newcommand{\cU}{{\mathcal U}}
+\newcommand{\cV}{{\mathcal V}}
+\newcommand{\cW}{{\mathcal W}}
+\newcommand{\cX}{{\mathcal X}}
+\newcommand{\cY}{{\mathcal Y}}
+\newcommand{\cZ}{{\mathcal Z}}
+
+
+% MATHSCRIPT FONT
+\newcommand{\sA}{{\mathscr{A}}}
+\newcommand{\sB}{{\mathscr{B}}}
+\newcommand{\sC}{{\mathscr{C}}}
+\newcommand{\sD}{{\mathscr{D}}}
+\newcommand{\sE}{{\mathscr{E}}}
+\newcommand{\sF}{{\mathscr{F}}}
+\newcommand{\sG}{{\mathscr{G}}}
+\newcommand{\sH}{{\mathscr{H}}}
+\newcommand{\sI}{{\mathscr{I}}}
+\newcommand{\sJ}{{\mathscr{J}}}
+\newcommand{\sK}{{\mathscr{K}}}
+\newcommand{\sL}{{\mathscr{L}}}
+\newcommand{\sM}{{\mathscr{M}}}
+\newcommand{\sN}{{\mathscr{N}}}
+\newcommand{\sO}{{\mathscr{O}}}
+\newcommand{\sP}{{\mathscr{P}}}
+\newcommand{\sQ}{{\mathscr{Q}}}
+\newcommand{\sR}{{\mathscr{R}}}
+\newcommand{\sS}{{\mathscr{S}}}
+\newcommand{\sT}{{\mathscr{T}}}
+\newcommand{\sU}{{\mathscr{U}}}
+\newcommand{\sV}{{\mathscr{V}}}
+\newcommand{\sW}{{\mathscr{W}}}
+\newcommand{\sX}{{\mathscr{X}}}
+\newcommand{\sY}{{\mathscr{Y}}}
+\newcommand{\sZ}{{\mathscr{Z}}}
+
+% SANS SERIF LOWERCASE
+\newcommand{\sfa}{\mathsf{a}}
+\newcommand{\sfb}{\mathsf{b}}
+\newcommand{\sfc}{\mathsf{c}}
+\newcommand{\sfd}{\mathsf{d}}
+\newcommand{\sfe}{\mathsf{e}}
+\newcommand{\sff}{\mathsf{f}}
+\newcommand{\sfg}{\mathsf{g}}
+\newcommand{\sfh}{\mathsf{h}}
+\newcommand{\sfi}{\mathsf{i}}
+\newcommand{\sfj}{\mathsf{j}}
+\newcommand{\sfk}{\mathsf{k}}
+\newcommand{\sfl}{\mathsf{l}}
+\newcommand{\sfm}{\mathsf{m}}
+\newcommand{\sfn}{\mathsf{n}}
+\newcommand{\sfo}{\mathsf{o}}
+\newcommand{\sfp}{\mathsf{p}}
+\newcommand{\sfq}{\mathsf{q}}
+\newcommand{\sfr}{\mathsf{r}}
+\newcommand{\sfs}{\mathsf{s}}
+\newcommand{\sft}{\mathsf{t}}
+\newcommand{\sfu}{\mathsf{u}}
+\newcommand{\sfv}{\mathsf{v}}
+\newcommand{\sfw}{\mathsf{w}}
+\newcommand{\sfx}{\mathsf{x}}
+\newcommand{\sfy}{\mathsf{y}}
+\newcommand{\sfz}{\mathsf{z}}
+
+% SANS SERIF UPPERCASE
+\newcommand{\sfA}{{\mathsf{A}}}
+\newcommand{\sfB}{{\mathsf{B}}}
+\newcommand{\sfC}{{\mathsf{C}}}
+\newcommand{\sfD}{{\mathsf{D}}}
+\newcommand{\sfE}{{\mathsf{E}}}
+\newcommand{\sfF}{{\mathsf{F}}}
+\newcommand{\sfG}{{\mathsf{G}}}
+\newcommand{\sfH}{{\mathsf{H}}}
+\newcommand{\sfI}{{\mathsf{I}}}
+\newcommand{\sfJ}{{\mathsf{J}}}
+\newcommand{\sfK}{{\mathsf{K}}}
+\newcommand{\sfL}{{\mathsf{L}}}
+\newcommand{\sfM}{{\mathsf{M}}}
+\newcommand{\sfN}{{\mathsf{N}}}
+\newcommand{\sfO}{{\mathsf{O}}}
+\newcommand{\sfP}{{\mathsf{P}}}
+\newcommand{\sfQ}{{\mathsf{Q}}}
+\newcommand{\sfR}{{\mathsf{R}}}
+\newcommand{\sfS}{{\mathsf{S}}}
+\newcommand{\sfT}{{\mathsf{T}}}
+\newcommand{\sfU}{{\mathsf{U}}}
+\newcommand{\sfV}{{\mathsf{V}}}
+\newcommand{\sfW}{{\mathsf{W}}}
+\newcommand{\sfX}{{\mathsf{X}}}
+\newcommand{\sfY}{{\mathsf{Y}}}
+\newcommand{\sfZ}{{\mathsf{Z}}}
+
+% UNDERLINE LOWERCASE
+\newcommand{\va}{\underline{a}}
+\newcommand{\vb}{\underline{b}}
+\newcommand{\vc}{\underline{c}}
+\newcommand{\vd}{\underline{d}}
+\newcommand{\ve}{\underline{e}}
+\newcommand{\vf}{\underline{f}}
+\newcommand{\vg}{\underline{g}}
+\newcommand{\vh}{\underline{h}}
+\newcommand{\vi}{\underline{i}}
+\newcommand{\vj}{\underline{j}}
+\newcommand{\vk}{\underline{k}}
+\newcommand{\vl}{\underline{l}}
+\newcommand{\vm}{\underline{m}}
+\newcommand{\vn}{\underline{n}}
+\newcommand{\vo}{\underline{o}}
+\newcommand{\vp}{\underline{p}}
+\newcommand{\vq}{\underline{q}}
+\newcommand{\vr}{\underline{r}}
+\newcommand{\vs}{\underline{s}}
+\newcommand{\vt}{\underline{t}}
+\newcommand{\vu}{\underline{u}}
+\newcommand{\vv}{\underline{v}}
+\newcommand{\vw}{\underline{w}}
+\newcommand{\vx}{\underline{x}}
+\newcommand{\vy}{\underline{y}}
+\newcommand{\vz}{\underline{z}}
+
+% UNDERLINE UPPERCASE
+\newcommand{\vA}{\underline{A}}
+\newcommand{\vB}{\underline{B}}
+\newcommand{\vC}{\underline{C}}
+\newcommand{\vD}{\underline{D}}
+\newcommand{\vE}{\underline{E}}
+\newcommand{\vF}{\underline{F}}
+\newcommand{\vG}{\underline{G}}
+\newcommand{\vH}{\underline{H}}
+\newcommand{\vI}{\underline{I}}
+\newcommand{\vJ}{\underline{J}}
+\newcommand{\vK}{\underline{K}}
+\newcommand{\vL}{\underline{L}}
+\newcommand{\vM}{\underline{M}}
+\newcommand{\vN}{\underline{N}}
+\newcommand{\vO}{\underline{O}}
+\newcommand{\vP}{\underline{P}}
+\newcommand{\vQ}{\underline{Q}}
+\newcommand{\vR}{\underline{R}}
+\newcommand{\vS}{\underline{S}}
+\newcommand{\vT}{\underline{T}}
+\newcommand{\vU}{\underline{U}}
+\newcommand{\vV}{\underline{V}}
+\newcommand{\vW}{\underline{W}}
+\newcommand{\vX}{\underline{X}}
+\newcommand{\vY}{\underline{Y}}
+\newcommand{\vZ}{\underline{Z}}
+
+% UNDERLINE GREEK LOWERCASE
+\newcommand{\valpha}{\underline{\alpha}}
+\newcommand{\vbeta}{\underline{\beta}}
+\newcommand{\vgamma}{\underline{\gamma}}
+\newcommand{\vdelta}{\underline{\delta}}
+\newcommand{\veps}{\underline{\epsilon}}
+\newcommand{\vzeta}{\underline{\zeta}}
+\newcommand{\veta}{\underline{\eta}}
+\newcommand{\vtheta}{\underline{\theta}}
+\newcommand{\viota}{\underline{\iota}}
+\newcommand{\vkappa}{\underline{\kappa}}
+\newcommand{\vlambda}{\underline{\lambda}}
+\newcommand{\vmu}{\underline{\mu}}
+\newcommand{\vnu}{\underline{\nu}}
+\newcommand{\vxi}{\underline{\xi}}
+\newcommand{\vpi}{\underline{\pi}}
+\newcommand{\vrho}{\underline{\rho}}
+\newcommand{\vsigma}{\underline{\sigma}}
+\newcommand{\vtau}{\underline{\tau}}
+\newcommand{\vupsilon}{\underline{\upsilon}}
+\newcommand{\vphi}{\underline{\phi}}
+\newcommand{\vchi}{\underline{\chi}}
+\newcommand{\vpsi}{\underline{\psi}}
+\newcommand{\vomega}{\underline{\omega}}
+
+% BOLD UNDERLINE LOWERCASE
+\newcommand{\vbfa}{{\underline{\mathbf{a}}}}
+\newcommand{\vbfb}{{\underline{\mathbf{b}}}}
+\newcommand{\vbfc}{{\underline{\mathbf{c}}}}
+\newcommand{\vbfd}{{\underline{\mathbf{d}}}}
+\newcommand{\vbfe}{{\underline{\mathbf{e}}}}
+\newcommand{\vbff}{{\underline{\mathbf{f}}}}
+\newcommand{\vbfg}{{\underline{\mathbf{g}}}}
+\newcommand{\vbfh}{{\underline{\mathbf{h}}}}
+\newcommand{\vbfi}{{\underline{\mathbf{i}}}}
+\newcommand{\vbfj}{{\underline{\mathbf{j}}}}
+\newcommand{\vbfk}{{\underline{\mathbf{k}}}}
+\newcommand{\vbfl}{{\underline{\mathbf{l}}}}
+\newcommand{\vbfm}{{\underline{\mathbf{m}}}}
+\newcommand{\vbfn}{{\underline{\mathbf{n}}}}
+\newcommand{\vbfo}{{\underline{\mathbf{o}}}}
+\newcommand{\vbfp}{{\underline{\mathbf{p}}}}
+\newcommand{\vbfq}{{\underline{\mathbf{q}}}}
+\newcommand{\vbfr}{{\underline{\mathbf{r}}}}
+\newcommand{\vbfs}{{\underline{\mathbf{s}}}}
+\newcommand{\vbft}{{\underline{\mathbf{t}}}}
+\newcommand{\vbfu}{{\underline{\mathbf{u}}}}
+\newcommand{\vbfv}{{\underline{\mathbf{v}}}}
+\newcommand{\vbfw}{{\underline{\mathbf{w}}}}
+\newcommand{\vbfx}{{\underline{\mathbf{x}}}}
+\newcommand{\vbfy}{{\underline{\mathbf{y}}}}
+\newcommand{\vbfz}{{\underline{\mathbf{z}}}}
+
+% BOLD UNDERLINE UPPERCASE
+\newcommand{\vbfA}{{\underline{\mathbf{A}}}}
+\newcommand{\vbfB}{{\underline{\mathbf{B}}}}
+\newcommand{\vbfC}{{\underline{\mathbf{C}}}}
+\newcommand{\vbfD}{{\underline{\mathbf{D}}}}
+\newcommand{\vbfE}{{\underline{\mathbf{E}}}}
+\newcommand{\vbfF}{{\underline{\mathbf{F}}}}
+\newcommand{\vbfG}{{\underline{\mathbf{G}}}}
+\newcommand{\vbfH}{{\underline{\mathbf{H}}}}
+\newcommand{\vbfI}{{\underline{\mathbf{I}}}}
+\newcommand{\vbfJ}{{\underline{\mathbf{J}}}}
+\newcommand{\vbfK}{{\underline{\mathbf{K}}}}
+\newcommand{\vbfL}{{\underline{\mathbf{L}}}}
+\newcommand{\vbfM}{{\underline{\mathbf{M}}}}
+\newcommand{\vbfN}{{\underline{\mathbf{N}}}}
+\newcommand{\vbfO}{{\underline{\mathbf{O}}}}
+\newcommand{\vbfP}{{\underline{\mathbf{P}}}}
+\newcommand{\vbfQ}{{\underline{\mathbf{Q}}}}
+\newcommand{\vbfR}{{\underline{\mathbf{R}}}}
+\newcommand{\vbfS}{{\underline{\mathbf{S}}}}
+\newcommand{\vbfT}{{\underline{\mathbf{T}}}}
+\newcommand{\vbfU}{{\underline{\mathbf{U}}}}
+\newcommand{\vbfV}{{\underline{\mathbf{V}}}}
+\newcommand{\vbfW}{{\underline{\mathbf{W}}}}
+\newcommand{\vbfX}{{\underline{\mathbf{X}}}}
+\newcommand{\vbfY}{{\underline{\mathbf{Y}}}}
+\newcommand{\vbfZ}{{\underline{\mathbf{Z}}}}
+
+
+
+%%% 
+%%% THEOREMS ETC
+%%% 
+
+% theorems etc (also  problems)
+\declaretheorem[name=Definition,numberwithin=section]{definition}
+\declaretheorem[name=Theorem,numberwithin=section]{theorem}
+\declaretheorem[name=Lemma,sibling=theorem]{lemma}
+\declaretheorem[name=Proposition,sibling=theorem]{proposition}
+\declaretheorem[style=remark]{remark}
+\declaretheorem[name=Claim]{claim}
+\declaretheorem[name=Conjecture]{conjecture}
+\declaretheorem[name=Exercise]{exercise}
+
+\declaretheoremstyle[name=Problem,mdframed={
+  skipabove=8pt,
+  skipbelow=6pt,
+  backgroundcolor={OI-lightblue!10},
+  innerleftmargin=8pt,
+  innerrightmargin=8pt}]{hwprob}
+\declaretheorem[style=hwprob]{problem}
+
+\declaretheoremstyle[name=Philosophical Note,mdframed={
+  skipabove=8pt,
+  skipbelow=6pt,
+  backgroundcolor={OI-orange!10},
+  innerleftmargin=8pt,
+  innerrightmargin=8pt}]{philosophy}
+\declaretheorem[style=philosophy]{philosophy}
+
+
+
+
+
+
+%%%
+%%% MATH NOTATION
+%%%
+
+% FONTS
+\def\lbar{\overline\ell}
+\def\mc{\mathcal}
+\def\mcb{\mathbfcal}
+\def\mbb{\mathbb}
+\def\mbf{\mathbf}
+\def\msf{\mathsf}
+\def\mbs{\boldsymbol}
+
+% DELIMITERS
+% \foo{} is non-autosizing but \foo*{} is autosizing
+\DeclarePairedDelimiter\parens{\lparen}{\rparen}  
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}
+\DeclarePairedDelimiter\norm{\lVert}{\rVert}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\braces{\lbrace}{\rbrace}
+\DeclarePairedDelimiter\bracks{\lbrack}{\rbrack}
+\DeclarePairedDelimiter\angles{\langle}{\rangle}
+\newcommand{\set}[1]{\bracks*{#1}}
+
+% SETS OF NUMBERS
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\Q}{\mathbb{Q}}
+
+% BINARY RELATIONS
+\newcommand{\defeq}{\triangleq}
+\newcommand{\coloneqq}{\triangleq}
+
+% SIMPLE FUNCTIONS
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\id}{id}   % identity function
+\newcommand{\Indic}[1]{\mathbbm{1}\parens{#1}} % indicator function
+\newcommand{\conv}{\star}
+\newcommand{\card}{\abs}
+\DeclareMathOperator{\spar}{sparsity}
+
+
+
+%%% 
+%%% LINEAR ALGEBRA AND OPTIMIZATION
+%%%
+
+% LINEAR ALGEBRA
+\newcommand{\ip}[2]{\angles*{#1,\ #2}} % inner product
+\newcommand{\trn}{\intercal} % operator transpose
+\renewcommand{\top}{\trn} % operator transpose
+\newcommand{\inv}{^{-1}} %inverse
+
+% Special norms and linear algebra stuff
+\newcommand{\subgnorm}[1]{\norm*{#1}_{\psi_2}}
+\newcommand{\subexpnorm}[1]{\norm*{#1}_{\psi_1}}
+\newcommand{\frobnorm}[1]{\norm*{#1}_{\mathrm{F}}}
+\newcommand{\opnorm}[1]{\norm*{#1}_{\mathrm{op}}}
+\newcommand{\Lipnorm}[1]{\norm*{#1}_{\mathrm{Lip}}}
+
+% trace and stuff
+\DeclareMathOperator{\tr}{Tr}   % matrix trace
+\DeclareMathOperator{\diag}{\mathrm{diag}}
+\DeclareMathOperator{\eig}{\mathrm{eig}}
+\DeclareMathOperator{\rank}{\mathrm{rank}\nolimits}
+\DeclareMathOperator{\Span}{span}
+\DeclareMathOperator{\proj}{proj}
+
+% Triple bar delimiter for matrix norms
+\DeclareFontFamily{U}{matha}{\hyphenchar\font45}
+\DeclareFontShape{U}{matha}{m}{n}{
+      <5> <6> <7> <8> <9> <10> gen * matha
+      <10.95> matha10 <12> <14.4> <17.28> <20.74> <24.88> matha12
+      }{}
+\DeclareSymbolFont{matha}{U}{matha}{m}{n}
+\DeclareFontSubstitution{U}{matha}{m}{n}
+% Math symbol font mathb
+\DeclareFontFamily{U}{mathx}{\hyphenchar\font45}
+\DeclareFontShape{U}{mathx}{m}{n}{
+      <5> <6> <7> <8> <9> <10>
+      <10.95> <12> <14.4> <17.28> <20.74> <24.88>
+      mathx10
+      }{}
+\DeclareSymbolFont{mathx}{U}{mathx}{m}{n}
+\DeclareFontSubstitution{U}{mathx}{m}{n}
+% Symbol definition to get matrix norms
+\DeclareMathDelimiter{\vvvert}{0}{matha}{"7E}{mathx}{"17}
+\DeclarePairedDelimiterX{\matnorm}[1]
+  {\vvvert}
+  {\vvvert}
+  {\ifblank{#1}{\:\cdot\:}{#1}}
+
+% GEOMETRY
+\DeclareMathOperator{\Vol}{\mathrm{Vol}}   % volume
+\DeclareMathOperator{\Surf}{\mathrm{Surf}} % surface area
+\DeclareMathOperator{\area}{Area}
+\DeclareMathOperator{\diam}{diam}
+\DeclareMathOperator{\dist}{dist}
+\DeclareMathOperator{\disc}{disc}
+
+
+% OPTIMIZATION
+\DeclareMathOperator*{\argmax}{\mathrm{argmax}}
+\DeclareMathOperator*{\argmin}{\mathrm{argmin}}
+\DeclareMathOperator*{\argsup}{\mathrm{argsup}}
+\DeclareMathOperator*{\arginf}{\mathrm{arginf}}
+
+%%%
+%%% GROUP THEORY
+%%%
+\DeclareMathOperator{\stab}{Stab}
+
+
+%%%
+%%% COMPUTER SCIENCE
+%%%
+
+% ORDER ("BIG-O") NOTATION ETC
+\DeclareMathOperator{\poly}{poly}
+\DeclareMathOperator{\polylog}{polylog}
+
+% LOGIC AND BOOLEAN STUFF
+\DeclareMathOperator{\AND}{\mathsf{AND}}
+\DeclareMathOperator{\OR}{\mathsf{OR}}
+
+
+
+%%%
+%%% PROBABILITY AND STATISTICS
+%%% 
+
+% EXPECTATIONS AND PROBABILITY
+% see https://tex.stackexchange.com/questions/187162/vertical-bar-for-absolute-value-and-conditional-expectation
+% usage: E[X] = \expect{X}, E_{P}[X] = \expect_P[X] or \expec_{P}*[X] for autosizing 
+% E[X|Y] = \expect{X|Y} or \expect*{X|Y} for autosizing
+\NewDocumentCommand{\expect}{ e{_} s o >{\SplitArgument{1}{|}}m }{%
+  \operatorname{\mathbb{E}}%     the expectation operator
+  \IfValueT{#1}{{\!}_{#1}}% the measure of the expectation
+  \IfBooleanTF{#2}{% *-variant
+    \expectarg*{\expectvar#4}%
+  }{% no *-variant
+    \IfNoValueTF{#3}{% no optional argument
+      \expectarg{\expectvar#4}%
+    }{% optional argument
+      \expectarg[#3]{\expectvar#4}%
+    }%
+  }%
+}
+\NewDocumentCommand{\expectvar}{mm}{%
+  #1\IfValueT{#2}{\nonscript\;\delimsize\vert\nonscript\;#2}%
+}
+\DeclarePairedDelimiterX{\expectarg}[1]{[}{]}{#1}
+\newcommand{\E}{\ensuremath{\mathbb{E}}}
+%
+%%% Same for probability
+%
+\NewDocumentCommand{\prob}{ e{_} s o >{\SplitArgument{1}{|}}m }{%
+  \operatorname{\mathbb{P}}%     the probability operator
+  \IfValueT{#1}{{\!}_{#1}}% the measure of the probability
+  \IfBooleanTF{#2}{% *-variant
+    \probarg*{\probvar#4}%
+  }{% no *-variant
+    \IfNoValueTF{#3}{% no optional argument
+      \probarg{\probvar#4}%
+    }{% optional argument
+      \probarg[#3]{\probvar#4}%
+    }%
+  }%
+}
+\NewDocumentCommand{\probvar}{mm}{%
+  #1\IfValueT{#2}{\nonscript\;\delimsize\vert\nonscript\;#2}%
+}
+\DeclarePairedDelimiterX{\probarg}[1]{(}{)}{#1}
+\renewcommand{\P}{\ensuremath{\mathbb{P}}}
+%\newcommand{\expe}[1]{\ensuremath{\E\left[ #1\right]}}   % expectation
+%\newcommand{\prob}[1]{\ensuremath{\P\left( #1 \right)}}
+\newcommand{\condon}{\,\ifnum\currentgrouptype=16 \middle\fi|\,} % condition on
+
+
+% small notations
+\newcommand{\iid}{\overset{\mathrm{i.i.d.}}{\sim}}
+\newcommand{\simplex}{\Delta}
+\newcommand{\Var}{\mathop{\mathrm{Var}}\nolimits}
+\newcommand{\Cov}{\mathop{\mathrm{Cov}}\nolimits}
+\newcommand{\MSE}{\mathop{\mathrm{MSE}}\nolimits}
+\newcommand{\LLR}{\mathop{\mathrm{LLR}}\nolimits}
+\newcommand{\FWER}{\mathop{\mathrm{FWER}}\nolimits}
+
+\newcommand{\Bern}{\mathsf{Bern}}
+\newcommand{\Unif}{\mathsf{Unif}}
+\newcommand{\Expv}{\mathsf{Exp}}
+\newcommand{\Lap}{\mathsf{Lap}}
+\newcommand{\Poi}{\mathsf{Poi}}
+\newcommand{\Gamv}{\mathsf{Gamma}}
+\newcommand{\Dirv}{\mathsf{Dir}}
+\newcommand{\Mult}{\mathsf{Mult}}
+\newcommand{\Beta}{\mathsf{Beta}}
+\newcommand{\Geomv}{\mathsf{Geom}}
+\newcommand{\Binomv}{\mathsf{Binom}}
+\newcommand{\NegBinomv}{\mathsf{NB}}
+\newcommand{\Weibull}{\mathsf{Weibull}}
+
+
+% information theory
+% coding theory
+\DeclareMathOperator{\weight}{\mathrm{wt}}
+\newcommand{\wt}{\weight}
+\newcommand{\wth}{\weight_{\mathrm{H}}}
+\renewcommand{\dh}{d_{\mathrm{H}}}  % Hamming distance
+\newcommand{\dmin}{d_{\mathrm{min}}}  % minimum distance
+\newcommand{\drel}{\delta} % relative distance
+\newcommand{\RS}{\msf{RS}}
+% Shannon theory
+\newcommand{\hb}{H}	% binary entropy
+\newcommand{\kldiv}[2]{D\parens*{#1 \mid\mid #2}} % kl divergence
+\newcommand{\mi}[2]{I\parens*{#1 ; #2}}
+\newcommand{\cmi}[3]{I\parens*{#1 ; #2 \mid #3 }}
+\newcommand{\type}[1]{T_{#1}}		% type
+\newcommand{\typeclass}[2]{\mathcal{T}^{#1}(#2)}	% type class
+\newcommand{\approxtypeclass}[3]{\mathcal{T}^{#1}_{#2}\left(#3\right)}
+\newcommand{\bsc}{\msf{BSC}}
+\newcommand{\bec}{\msf{BEC}}
+
+\newcommand{\erase}{\bot} % erasure symbol
+\newcommand{\noaction}{\bot}
+
+
+%%%
+%%% DETECTION AND ESTIMATION
+%%%
+\newcommand{\bht}{\underset{\mc{H}_0}{\overset{\mc{H}_1}{\gtrless}}}
+\newcommand{\thb}{\underset{\mc{H}_1}{\overset{\mc{H}_0}{\gtrless}}}
+\newcommand{\bhtk}{\underset{\mc{H}_{0,k}}{\overset{\mc{H}_{1,k}}{\gtrless}}}
+\newcommand{\bhtNeg}{\underset{\mc{H}_-1}{\overset{\mc{H}_1}{\gtrless}}}
+
+\newcommand{\Pfa}{P_{\mathrm{FA}}}
+\newcommand{\Pmd}{P_{\mathrm{MD}}}
+\newcommand{\Pd}{P_{\mathrm{D}}}
+\newcommand{\Pfak}{P_{\mathrm{FA},k}}
+\newcommand{\Pmdk}{P_{\mathrm{MD},k}}
+
+% RISK FUNCTIONS
+\newcommand{\dbayes}{\delta_{\mathrm{B}}}
+\newcommand{\dbayesprior}[1]{\delta_{\mathrm{B},#1}}
+\newcommand{\dmap}{\delta_{\mathrm{MAP}}}
+\newcommand{\dml}{\delta_{\mathrm{ML}}}
+\newcommand{\dminimax}{\delta_{\mathrm{m}}}
+\newcommand{\dnp}{\delta_{\mathrm{NP}}}
+\newcommand{\Dnp}{\Delta_{\mathrm{NP}}}
+\newcommand{\Rmax}{R_{\mathrm{max}}}
+\newcommand{\Ravg}{\bar{R}}
+
+
+%%%
+%%% SIGNALS AND SYSTEMS
+%%%
+%% SYSTEMS STUFF
+\newcommand{\phase}{\angle} % req. amssymb package
+\newcommand{\fsim}{f_{\mathrm{sim}}}
+\newcommand{\Deltasim}{D_{\mathrm{sim}}}
+\DeclareMathOperator{\rect}{rect}
+\DeclareMathOperator{\sinc}{sinc}
+\newcommand{\snr}{\mathrm{SNR}}
+\newcommand{\snrdb}{\mathrm{SNR}_{\mathrm{dB}}}
+
+%%% Transforms! -- requires mathtools package
+\newcommand{\LapTrans}{\xleftrightarrow{\mathcal{L}}}
+\newcommand{\ZTrans}{\xleftrightarrow{\mathcal{Z}}}
+\newcommand{\CTFS}{\xleftrightarrow{\mathrm{CTFS}}}
+\newcommand{\CTFT}{\xleftrightarrow{\mathrm{CTFT}}}
+\newcommand{\DTFS}{\xleftrightarrow{\mathrm{DTFS}}}
+\newcommand{\DTFT}{\xleftrightarrow{\mathrm{DTFT}}}
+
+
+
+
+

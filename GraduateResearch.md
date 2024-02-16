@@ -1,291 +1,18 @@
 # Becoming a graduate researcher
 
-##### an idiosyncratic take by Anand D. Sarwate
-
-These are some notes and miscellaneous items about skills and tips for success in graduate school (and beyond!). It is (a) not comprehensive and (b) very idiosyncratic. Things I'm not going to talk about:
-
-* what classes to take
-* how to pass various exams
-
-This is very much a work in progress and some stuff has yet to be written. If you have some suggestions, please email me.
-
-## Some other sources of advice
-
-* [MIT Comm Lab's CommKit]
-(https://mitcommlab.mit.edu/nse/use-the-commkit/)
-
-
-## Getting started: look like a researcher, not an undergrad
-
-Since your goal is to publish new research discoveries, you have to start thinking of yourself as having a "public image" as a researcher. This means you have to create a way for other researchers (or potential employers) to find you and learn more about what you are working on. The last thing you want is for people to search for your name and turn up nothing or worse, a bunch of links to different people with the same name with embarassing social media presences.
-
-A checklist:
-
-* Create a homepage
-* Make git repo
-* Consider your social media presence
-* Update your profile on LinkedIn
-* Create an ORCID
-
-You can do all of these in a day (or even half a day). There is really no excuse to not doing this **immediately**.
-
-### Create a homepage
-
-You should create a homepage for yourself. Why? That way you have a place to put your CV, links to projects and code, a description of your research, and other public-facing information about yourself. You don't have to list hobbies or the books you read or anything else that you don't feel like sharing. But having a homepage gives people wanting to know more about your research someplace to go. It is also important for internships -- companies will look at your website to see what you are doing. You don't have to have any publications yet!
-
-You have a couple of options:
-
-* host the website on a department or university server - you can hardcode the HTML (not advised, but this is what I have now due to legacy code) or use [Jekyll](https://jekyllrb.com/) or [Hugo](https://gohugo.io/) or [jemdoc](https://jemdoc.jaboc.net)
-* make a site on Google Sites
-* host a site on github.io (needs a github account)
-
-### Make a github (or other) account
-
-It is very important to have a public repository of code from projects you have worked on. Perhaps you already have a git account on [GitHub](https://www.github.com/) or [GitLab](https://www.gitlab.com/): good for you! 
-
-We have a [lab site on GitLab](https://gitlab.com/sarwate_lab). You should ask for access if you haven't already. There are lots of reasons to have a repo:
-
-* If you write code for an algorithm you developed or a simulation from a paper, you should create a repo for the paper and post the code (including preprocessing) and data (or a link to the data if it's a public data set). This is part of doing reproducible research. The code should be hosted on the lab site, probably but you can link to it from your own site.
-* If you apply for an internship, companies will look at your git repos. If you have nothing there, they will think you have no skills: it looks bad! If you have no papers yet but some code from class projects, put up the code and project there. This shows that you know how to do things.
-* If you get a job in industry, chances are you will have to use git. You should be aware of how it works and how to use it in order to be more employable.
-* You can use the lab git repository and point to contribuutions you have made to research projects (e.g. the code from a paper) there.
-
-Make sure you link to your git account from your homepage!
- 
-### Social media
-
-Social media is currently a totally optional thing -- lots of prominent researchers do not have Twitter accounts. However, if it is something you are comfortable with, you might consider creating a Twitter account to engage with other members of the academic community (and the public more broadly). The downsides are standard: social media can be a total waste of time and attention. Also looking at other people promoting their own research can make you feel bad about yourself/your own progress. The upsides are that you might get a better sense of what kind of research is interesting to people/generates a lot of attention.
-
-If you already have a Twitter handle, keep in mind that people who read your papers will automatically connect your Twitter handle with your role as a researcher. This is a hazard depending on what you do publicly on twitter.
-
-Full disclosure: I am trying to use Twitter less.
-
-### Update LinkedIn
-
-Even if it's not clear how much it helps you, it doesn't really hurt you to have a profile up. Employers will look you up on LinkedIn, including people looking for potential interns. This is especially true of managerial level folks who are less interested in poking through your github. Create a profile there and make sure the information is current (including the homepage you just made).
-
-A great resource for understanding job-related things, how to present yourself in interviews, and so on, is the [Ask a Manager](https://www.askamanager.org/) blog.
-
-### Create an ORCID
-
-Many publication venues are now requring authors to link their papers with their ORCID. You can create one at [https://www.orcid.org/](https://www.orcid.org/).
-
-### Make a CV
-
-You will want to make a resume or CV (see the [MIT Comm Lab's CommKit]
-(https://mitcommlab.mit.edu/nse/use-the-commkit/)) that you can update as you progress through grad school. A CV is more research-oriented, whereas a resume is more for looking for jobs/internships. Depending on the internship, they may prefer a CV. Sometimes you feel awkward making a CV before you have published anything, but having one there that you can add to is important.
-
-There are many CV templates on Overleaf so you can choose one which looks good to you.
-
-
-
-
-## Getting organized
-
-### Keeping track of your work
-
-What will not work very well is for you to think that you will just keep track of everything in your head. Give up that idea now. Likewise, having 500 notability PDFs with each day's notes will be hard to keep track of.
-
-I recommend having a notebook, either physical (yes, I'm old) or a LaTeX document where you can keep notes on your progress. Things you might consder:
-
-* A "diary" style where you write for each day the notes and can track what your current main tasks/objectives are and then document what you have done to reach those.
-
-* A project-based file where you have more detailed notes on a single project which you can rearrange as you go along. For example, you might structure it like a paper, putting maybe some stuff in a "related work" section, having a problem formulation section where you fix the notation and define the problem, and a "useful tools" section where you can put little lemmas, probability facts, concentration inequalities, etc. for easy access -- copying over from a paper you are reading can actually be helpful in undestanding -- as you rewrite their lemma using your notation you get a better sense of how to apply it.
-
-There are also tons of to-do list management tools out there and productivty philosophies if you want to read about those. Some combination of that advice might work for you.
-
-
-
-### Time management
-
-Time management is a crucial skill!
-
-* [http://www.raulpacheco.org/tag/project-planning/](http://www.raulpacheco.org/tag/project-planning/)
-
-Grad school is tricky: you are a student but you are also an employee. You might have a family. Work-life balance is very important, so try to make sure you are keeping that balance in mind and don't ignore things like diet, exercise, sleep, and fun/relaxation. For some people different times of day may be better for different types of work: writing is a lot easier in the morning for me. For some people having a regular schedule is important: one friend in grad school who was married maintained a strict 8 AM - 4 PM schedule, while another liked to come in late, take a long break in the middle of the day to work out at the gym, and then stayed in lab until 9 or 10 PM. Find what works for you.
-
-It's very easy to lose track of time! One thing that can be helpful is to spend a week where you log your time (maybe even in 15 minute intervals). In the US, lawyers charge for their time in 6 minute increments, but that seems too fine-grained. This type of self montioring once might help you identify where you are spending your time. Maybe you will see a pattern or habit you want to change or you can think of a way to organize your time differently.
-
-There is more to write here but remember: any day in which you learn something new is a useful day. So try to make that the minimum target for each day. Learning new things is what research is all about!
-
-
-
-### Balancing coursework, teaching, and research
-
-This is tricky! Having clearly stated objectives and blocking off time for reseearch is critical. So when you sit down to do some research you can do something useful with that time. For example, your immediate task may be to read a paper and take notes, or to look up references for something, or to write some code.
-
-If you are a TA then beiing a TA is your job so you have to do a good job at it. That doesn't mean spending 30 hours per week on it -- the contract says you only have to work N hours per week (on average) so if you find yourself doing a lot more there is probably a problem that needs to get addressed.
-
-If you are taking classes then you should try to learn as much as you can in the classes. But that doesn't mean you should be spending 30 hours per week on a class: if it is too hard maybe it's not the right class, or if you are spending that much time maybe there is a more effective/efficient strategy. Just try to be mindful of how much time you are spending.
-
-### Preparing for meetings
-
-Here is a set of questions to ask yourself before going into your weekly research meeting. It can help you clarify your objectives and what you want to get out of the meeting:
-
-* What were your main goals during this period?
-  * Be specific, e.g. 
-  * 1. Read paper X to understand Y, 
-  * 2. Find data sets and be able to load them in Python, 
-  * 3. write up the proof we discussed on the board
-* What did you do to achieve these goals?
-  * Use your notebook to help with this! For example:
-  * On Monday and Tuesday I read Lemmas 1-4 but didn't look at Y.
-  * Wednesday I had to work on a project for a class, but I downloaded the data sets
-  * Thursday I started writing up the proof but I got stuck. 
-  * On Friday and Saturday I was busy with family obligations because of a holiday.
-  * Sunday I loaded the dataset but there is some bug which I can't figure out yet.
-* Did you find something interesting or new?
-* If you got stuck, where did you get stuck?
-  * It's not enough to say "I'm stuck" -- you want to know why.
-  * Have some specific questions.
-  * Say what you tried to do that didn't work.
-  * The reasons for being stuck aren't always technical: maybe you are using the wrong search term, maybe you don't know where find the piece of math you need, or maybe you need to fix something with time management.
-* What approaches do you think might work?
-  * Identify possible sources of a solution -- better search terms, the right field of math or a introductory textbook, or getting a better sleep schedule.
-
-**After the meeting** you should also make some notes for yourself that will help you organize the next week.
-
-* What new things did I learn from this meeting?
-* What references/papers should I look at?
-* Are there directions that look more or less promising?
-* Are there short-term ways in which I should change how I work?
-* Are there long-term ways in which I should change how I work?
-* What are my new goals for this week?
+**THIS IS BEING SPLIT INTO MULTIPLE FILES, stuff will vanish from here beware!!!**
 
 
 ## Research Skills
 
 There are a lot of different concrete skills that you (should) develop as a graduate student. A lot of these have to do with successfully grappling with the vast amount of research that already exists: how to read it, how to evalute it critically, how to organize and summarize it, and how to present it.
 
-### How to read a paper
-
-There is already lots of advice on how to read papers out there. I think the first thing to decide is what kind of reading are you going to do? That is, you have to figure out what you want to learn from the paper.
-
-* What is this area of research about?  Then you can read the introduction and skim the experiments if there are any. 
-* How do they formulate their problem mathematically? You should read the intro (maybe skim some of it/read it later) and definitely read the model, problem statement, or whatever that section is called.
-* What does this paper show? Read all of the above as well as the main results (but not the proofs). Focus on trying to understand what the results mean.
-* How do they prove their results? In this case you want to focus on the proofs at least at the proof sketch level or even better, line by line. Try to make sure you can understand each step, or ask for help!
-
-### How to do a literature search
-
-Doing a literature search means finding all of the relevant papers on a single topic. The goal is to broad and comprehensive -- you want to find more papers/books/etc. that might be useful before you decide which ones to include in your search.
-
-One way to start is to pick a paper that you know is on the topic and read the intro/related work section. There will be sentences like "Patel et al. [13] showed that the general problem of optimizing the rate is NP-hard, but later work by Xu and Zhang [14] gave a characterization of problems which can be efficiently optimized by solving a linear program." Then you know that the papers by Patel et al. [13] and Xu and Zhang [14] aer both relevant to the theoretical aspects of the problem. You can download those to papers and late read their related work, etc.
-
-Another good option is to see what papers cite the paper you found by looking in Google Scholar for example. Then you can find later papers which cite the paper you are looking at. Some will seem relevant and some will be irrelevant. Download the relevant ones and do the same search procedure on them by reading the related work.
-
-How do you decide whether to include a paper in your search? You want to search broadly but you need to categorize the papers so that you can start organizing the citations by what the papers talk about. You might have one category of primarily experimental papers, one category for theoretical analyses, one category for applications to diffent problems, and so on. Or you might have papers which are written by statisticians versus those written by electrical engineers which don't seem to cite each other but are looking at similar problems.
-
-Some questions to help you organize your thinking around a paper you are looking at are given below. These are not exhaustive but should give you a sense of the kind of questions you should be asking before and as you read.
-
-* Where was this published? Is this a top-tier journal or conference? Is it one you have heard of? It's easy to find papers which are published in less impactful venues which might seem to be relevant but which are actually not.
-* Who are the authors and what institution (academic or industry) are they from? What kind of department are they in? This can tell you a lot about the methodology and terminology you are likely to encounter in the paper.
-* What sort of paper is this: one which proposes a new model and proves new theorems, one which solves a longstanding open problem, one which proposes algorithms an analyses them, one which proposes algorithms and shows that they work experimentally, one which summarizes the work in an area, or some mix of the above?
-* What kind of analytical tools do they use?
-* What is the scale of the experiments: testing it out on commonly used datasets like MNIST and CIFAR-10, or application-specific data sets which are publicly available, or data which is only available to the authors?
-
-It is quite possible to have 100+ papers that you download. That is research! You have to SEARCH and REad to understand what has been done before.
-
-
-### How to write a literature review
-
-Once you have your pile of papers and notes on the papers, you have to organize them into a coherent description of the related work on a problem.
-
-Finally, take notes on each of the papers, and add the references to a BibTeX file so you can write up a summary. Start by writing little chunks of summary tying things togeher. For example: 
-
-> *"the problem was first studied by Johnson [1] and sparked new work in both the physics and engineeing communities. Physicists [2-4] used statistical mechanics to understand the phenomena in very large systems. The recent survey paper by Gentile et al. [5] describes this body of research in great detail. On the engineering side, separate work by Horn and Kay [6] and Sastry et al. [7] showed that for smaller systems one could observe coupling between individual components..."* 
-
-Then you might have a separate section which addresses experimental or algorithmics work. And so on.
-
-Eventually you have enough fragments to try and organize them into a story. Think of how you would explain the problem to your friend and all the work that has been done. You can't do it by talking about random papers, but instead talk about different dimensions of the problem and what work has been done in those directions.
-
-If this literature review is part of a related work section for a  paper you are wriing, then you need to describe what the paper does, what it doesn't do, and what your paper does differently. You should never (if you can avoid it) write a sentence like 
-
-> *Patel et al. studied a similar problem [1]*. 
-
-In what way is it similar? That sentence is almost meaningless.
-
-### How to review a paper
-
-Chances are, once you have gotten a reasonable handle on research in an area, you might be asked to review a paper.
-
-There is already lots of advice on how to write reviews:
-
-**NEED TO COMPILE THIS ADVICE**
-
-### How to give a talk
-
-There is infinite advice out there on how to give good talks, as well as some pretty funny advice about how to not to give talks.
-
-**NEED TO WRITE THIS STILL**
-
-#### Conference talks
-
-#### Group meeting/lab talks
-
-#### Seminar talks
-
-
-
-## Software and tools
-
-In addition to having a homepage and a git repo, there are a number of other pieces of software which are important to learn how to use.
-
-### Bibliography management
-
-You should end up reading a **lot** of papers in grad school. You need to figure out how to organize them! There are quite a few tools out there:
-
-* Zotero: an open-source bibliography management tool with web browser plug-ins so you can create an entry from data scraped from the paper's website.
-* Mendeley: I used to like this, but they were bought by Elsevier, which is evil, so I no longer recommend it.
-* Many BibTeX or BibLaTeX managers (e.g. BibDesk on Mac OS) have a "notes" feature or something where you can type in some quick notes associated to the bib entry.
-
-It helps to have some sort of "diary" or other way of keeping a log of what you've been reading and what the main points of the paper were, things that were interesting or confusing, and things that you might want to follow up on. For the last thing, it could be some problem the paper left unanswered (maybe you can answer it) or some new analysis/technique you might want to learn, or just that you need to cite this paper when working on this problem.
-
-### Programming
-
-If you are an EE student, chances are you have done a lot of your programming in MATLAB. While lots of places still use MATLAB, you are better off learning Python, and particular using `numpy` and `scipy` for simulations. If you are doing large-scale nachine learning (e.g. deep learning) you might want to learn how to use [PyTorch](https://pytorch.org) or [TensorFlow](https://www.tensorflow.org/). Download [Jupyter](https://jupyter.org) so you can make interactive Python `.ipython` notebooks -- this is a good way to keep track of code and notes, since the notebooks support LaTeX markup.
-
-Another language you can learn (especially if you think you might be engaging seriously with the statistics literature) is `R`. The syntax is very similar to MATLAB (and in particular matrix multiplication, which is ugly in Python, is more MATLAB-like in `R`). There is a very active open-source development base for `R` and many statistics papers come with an `R` package that you can install and use to test/apply the methods.
-
-Knowing Python, `R`, and MATLAB are a good start, but if you want to do more serious software development, learning C# or C++ or another "real" (compiled) language is not a bad idea.
-
-Why am I so anti-MATLAB? It's expensive, not that fast, and industry is moving away from it. Switching to Python is not hard, once you overcome the psychological barrier of having to learn another language.
-
-
-## Computational Experiments
-
-A lot of experiments in my research areas involve working with simulations of algorithms operating on synthetic or real data. This means that there are often many different ways of understanding how to set up an appropriate experimental validation of your theoretical or algorithmic ideas. What follows is one approach to figuring out how to set up and run your experiments. In this, I assume you have the algorithm working properly (i.e. the bugs have been worked out).
-
-The central thing to figure out is the set of questions your want your experiments to answer. These questions have to be specific and answerable in a single plot/table/diagram/etc. It is tempting to run a bunch of simulations first and then figure out what questions to ask later but you will invariably end up asking different questions than you should or having to rerun of new simulations. 
-
-So what do I mean by specific and answerable? Let's do an example of refining a too-general question into something more workable. Suppose you have an algorithm for training a predictor on labeled data (a supervised learning algorithm). The algorithm has parameters A and B. Starting from the top:
-
-* How good is my algorithm?
-* How does the test error of my algorithm behave?
-* What is the test error of my algorithm as a function of the sample size?
-* How does the test error decrease with the number of training points?
-* How does the test error decrease with the number of training points for small A?
-* How does changing B affect how my test error decreases with the number of training points when A is small?
-
-At the end you can answer this question with a plot that has several plots (one for each value of B) of error versus training set size for fixed A.
-
-When figuring out what to do for experiments you want to write down the list of performance criteria (e.g. test error, run time, memory usage, bandwidth) and a list of algorithm parameters (A, B, sample size, bound on the norm of input points, etc.). You will be fixing some of these and seeing how the others behave. Or you will be constraining one of the performance criteria (e.g. make sure the memory doesn't exceed 1 Gb).
-
-When preparing to do experiments:
-
-* Make a list of questions first. **Write them down.**
-* Figure out what simulations to run.
-* Determine how to visualize your results.
-* Interpret your results (e.g. answer the question).
-
-
-
 
 ## Writing tips
 
 General writing advice:
 
-	* Writing is hard! It is 99% rewriting. Be prepared for writing to take lots of time: more time than you think it should.
+* Writing is hard! It is 99% rewriting. Be prepared for writing to take lots of time: more time than you think it should.
 * Read Harold Becker's Writing for Social Scientists (in the lab Google Drive or you can find it online). It says "for social scientists" but has a lot of general advice which can help when you are writing.
 * [Improving your academic writing: My top 10 tips](http://www.raulpacheco.org/2013/02/improving-your-academic-writing-my-top-10-tips/)
 * Get used to writing notes and other mini writeups in LaTeX. This will both help you get more proficient with LaTeX but also the act of writing down can help in trying to understand things. For example, suppose you want to use a theorem from some paper or book. Copy out the theorem and 
@@ -322,6 +49,8 @@ There is a ton of advice out there on editing and writing. Here are a few refere
 * Howard S. Becker, Writing for Social Scientists, University of Chicago Press, 2007.  
 You may think that this is not a book engineers need to read but it has lots of great advice about the writing process, especially in the first few chapters.
 
+For some very specific advice (big and small) regarding mathematical writing, see the tips section of [this overleaf template](https://www.overleaf.com/read/hczfttksjhqs)
+
 
 #### Starting out
 
@@ -341,7 +70,7 @@ Focus on getting the ideas you want to say in an order that would make sense to 
 
 #### Editing
 
-Once you get the ideas in the right order, the technical material written, and the major issues out of the way, it may come time to "polish" the manuscript. What I call "polishing" is an iterative process to edit and improve the manuscript.
+Once you get the ideas in the right order, the technical material written, and the major issues out of the way, it may come time to "polish" the manuscript. What I call "polishing" is an iterative process to edit and improve the manuscript. 
 
 #### Final checks
 
@@ -531,6 +260,7 @@ Think of the thesis as being read by a student with a Masters who wants to work 
 
 ### Advice when it comes time to write
 
+**NEEDS TO BE WRITTTEN**
 
 #### Common thesis mistakes
 
