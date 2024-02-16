@@ -40,17 +40,14 @@ Some other resources to read:
 * Writing a conference paper **to be written**
 * Writing a journal paper **to be written**
 * [Finalizing a paper](WritingEndgame.md)
-* LaTeX tips **to be written**
+* LaTeX tips **to be added**
    * [JDO's common errors](https://web.ece.ucdavis.edu/~jowens/commonerrors.html)
    * [Eddie Kohler's advice](https://www.read.seas.harvard.edu/~kohler/latex.html)
 
 ## Talks and posters
 
+See [MIT Comm Lab's CommKit](https://mitcommlab.mit.edu/eecs/use-the-commkit/).
+
 * Advice on giving talks: **to be written**
 * Poster presentations **to be written**
-
-
-## External resources
-
-
 
