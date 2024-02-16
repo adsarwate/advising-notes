@@ -20,7 +20,7 @@ The goal of a rubric is to make it clearer to the examinees and examiners what i
 
 ### Questions to answer
 
-To make questions easier to state, let's assume the student is presenting a research project. It's important to note that "the presentation" is both the prepared materials (slides) and the questions and answers given by the student. 
+To make questions easier to state, let's assume the student is presenting their own research, perhaps based on a recently submitted or accepted conference paper. It's important to note that "the presentation" is both the prepared materials (slides) and the questions and answers given by the student. 
 
 The proposed rubric would be to rate the how well the presentation addressed the question below on a Likert scale (e.g. 1-5) such as:
 
