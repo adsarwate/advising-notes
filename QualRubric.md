@@ -1,6 +1,6 @@
-# Proposed rubric for PhD Qualifying Exams in Rutgers ECE
+## PhD Qualifying Exams
 
-The goal of a Qualifying Exam ("qual") is for a student to effectively demonstrate that they have the knowledge and skills that will be needed to conduct meaningful research in their chosen subfield of Electrical and Computer Engineering (ECE). There are a number of key phrases in this sentence:
+The goal of a Qualifying Exam ("qual") is for a student to effectively demonstrate that they have the knowledge and skills that will be needed to conduct meaningful research in their chosen subfield. There are a number of key phrases in this sentence:
 
 * *effectively demonstrate* : the student should give a presentation of a research topic in a way that is organized, clear, correct, and convincing, as judged by the examiners.
 
@@ -18,19 +18,21 @@ The goal of the committee/examiners is to:
 
 The goal of a rubric is to make it clearer to the examinees and examiners what issues must be addressed by the presentation and on what basis the recommendation will be made.
 
-## Questions to answer
+### Questions to answer
 
 To make questions easier to state, let's assume the student is presenting a research project. It's important to note that "the presentation" is both the prepared materials (slides) and the questions and answers given by the student. 
 
 The proposed rubric would be to rate the how well the presentation addressed the question below on a Likert scale (e.g. 1-5) such as:
-	1. Unacceptable
-	2. Needs significant improvement
-	3. Needs minor improvement
-	4. Good
-	5. Above expected performance
+
+   1. Unacceptable
+   2. Needs significant improvement
+   3. Needs minor improvement
+   4. Good
+   5. Above expected performance
+
 For 2-3 the examiner should provide examples or suggestions for improvement. For 5, the examiner should be encouraged to highlight what was particularly effective. These can form the basis for ongoing advice to future examinees.
 
-### Context and importance
+#### Context and importance
 
 There are at least four ways in which the presentation should provide context for the project being presented. 
 
@@ -42,7 +44,7 @@ There are at least four ways in which the presentation should provide context fo
 
 **Example:** in a project about designing a new sensor, the presentation should explain where such a sensor would be used, why it is needed, what kinds of sensors are available now, what limitations are there on the design, and how the solution relates to topics learned in introductory graduate-level classes.
 
-### Organization, accessibility, and credit
+#### Organization, accessibility, and credit
 
 The presentation should be organized and clear so that the committee can follow what the student is describing. In particular, the presentation should not be a conference talk for specialists because the examiners will not in generla be specialists in the particular project being presented.
 
@@ -51,10 +53,9 @@ The presentation should be organized and clear so that the committee can follow 
 3. Did the presentation make effective use of visual/graphical elements?
 4. Were sources of figures or other material acknowledged?
 
-
 **Example:** in a project about designing error correcting codes for molecular communication systems, the presentation should be understandable to an examiner who knows about signal processing in wireless communication systems. The presentation should describe the problem of cells communicating to each other using chemicals and "quorum sensing", preferably 
 
-### Knowledge and skills
+#### Knowledge and skills
 
 The presentation should convince the committee that they have a solid foundation on which to further extend their knowledge and skills to address the future research questions 
 
@@ -63,11 +64,11 @@ The presentation should convince the committee that they have a solid foundation
 3. Did the presentation connect the project to foundational works and concepts?
 4. Did the presentation explain contribution/novelty/innovation of the project in a sufficiently technical way?
 
-## The exam process
+### The exam process
 
 An ideal presentation would address the questions without the need for further questioning by the examiners.
 
-To be written...
+**to be written**
 
 
 

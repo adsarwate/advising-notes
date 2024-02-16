@@ -10,9 +10,9 @@ I recommend having a notebook, either physical (yes, I'm old) or a single docume
 
 * A project-based file where you have more detailed notes on a single project which you can rearrange as you go along. For example, you might structure it like a paper, putting maybe some stuff in a "related work" section, having a problem formulation section where you fix the notation and define the problem, and a "useful tools" section where you can put little lemmas, probability facts, concentration inequalities, etc. for easy access -- copying over from a paper you are reading can actually be helpful in undestanding -- as you rewrite their lemma using your notation you get a better sense of how to apply it.
 
-* A slide deck that grows over time where you can document each day, findings, etc. This is a low-effort way to log figures and experiment settings etc. The bad thing is to have all pictures and no text. You need to have words so that one month later (or even 2 days later) you can remember what the heck you were doing at the time.
+* A slide deck that grows over time where you can document each day, findings, etc. This is a low-effort way to log figures and experiment settings etc. The bad thing is to have all pictures and no text. You need to have words and equations so that one month later (or even 2 days later) you can remember what the heck you were doing at the time. Don't just put the plot from the experiment, write a short description of the experiment as well!
 
-There are also tons of to-do list management tools out there and productivty philosophies if you want to read about those. Some combination of that advice might work for you.
+There are also tons of to-do list management tools out there and productivity philosophies if you want to read about those. Some combination of that advice might work for you.
 
 
 ### Research Meetings

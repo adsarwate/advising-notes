@@ -1,4 +1,4 @@
-## Getting started: look like a researcher, not an undergrad
+## Getting started: look like a researcher
 
 Since your goal is to publish new research discoveries, you have to start thinking of yourself as having a "public image" as a researcher. This means you have to create a way for other researchers (or potential employers) to find you and learn more about what you are working on. The last thing you want is for people to search for your name and turn up nothing or worse, a bunch of links to different people with the same name with embarassing social media presences.
 
