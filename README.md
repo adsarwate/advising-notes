@@ -10,6 +10,7 @@ Some other resources to read:
 
 * Raul Pacheco has some really nice [advice on all sorts of things](http://www.raulpacheco.org/resources/).
 * [MIT Comm Lab's CommKit](https://mitcommlab.mit.edu/eecs/use-the-commkit/) is a great source for all sorts of things about communication (papers, posters, cover letters etc.).
+* [Advice from Nick Feamster and Alex Gray](https://greatresearch.org/2013/08/14/managing-your-advisor/) on "managing your advisor." THey make some good points (I may not agree 100% but ok).
 
 ## Getting started
 
