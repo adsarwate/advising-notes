@@ -11,7 +11,6 @@ Some other resources to read:
 * Raul Pacheco has some really nice [advice on all sorts of things](http://www.raulpacheco.org/resources/).
 * [MIT Comm Lab's CommKit](https://mitcommlab.mit.edu/eecs/use-the-commkit/) is a great source for all sorts of things about communication (papers, posters, cover letters etc.).
 
-
 ## Getting started
 
 * [Professionalization](ProfessionalStuff.md): getting started and getting your presence as a researcher
@@ -28,11 +27,11 @@ Some other resources to read:
 
 ## Research skills
 
-
 * [Reading papers and literature search](ReadingSkills.md): the many ways to read a paper, how to do a literature search, and so on
 * [Formulating problems and making notes](MakingWriteups.md) **in progress**
 * [Running computational experiments](Experiments.md): some thoughts on designing and running experiments (still a work in progress)
 * [Reviewing papers](Reviewing.md): some starting points on peer review
+* [An opinionated glossary](OpinionatedGlossary.md): a slowly growing list of terms which I think cause some confusion for learning/reading initially. 
 
 ## Writing stuff up
 
@@ -50,4 +49,3 @@ See [MIT Comm Lab's CommKit](https://mitcommlab.mit.edu/eecs/use-the-commkit/).
 
 * Advice on giving talks: **to be written**
 * Poster presentations **to be written**
-
