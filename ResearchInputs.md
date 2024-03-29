@@ -9,7 +9,7 @@ It's important to gain both breadth and depth in grad school. You do this by:
 
 A common excuse to not read a paper or not go to a talk is "it's not related to my research." If you find yourself asking that question, ask these questions instead:
 
-* Am I such an expert in my research area that I can tell what is going to be useful and what is not going to be useful for my research?
+* Am I already such an expert in my research area that I can tell what is going to be useful and what is not going to be useful for my research?
 * If I talk to someone on a job interview and it turns out I only know about the specific thing that I did research on myself, will that impress them?
 * Would I call myself fluent in a language if I can only talk about the weather?
 
