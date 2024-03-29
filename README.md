@@ -23,7 +23,7 @@ Some other resources to read:
 * [Organizing your research](OrganizingWork.md): how to track and maintain progress. Here are two forms for pre-meeting and post-meetings to help keep research progress on track.
    * [Pre-meeting form](PreMtgForm.md)
    * [Post-meeting form](PostMtgForm.md)
-* [Developing skills over time](DevelopingSkills.md):  how to check your progress and get hel over time.
+* [Developing skills over time](DevelopingSkills.md):  how to check your progress and get help over time.
 * The dissertation **to be written**
 
 ## Research skills
