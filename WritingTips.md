@@ -48,6 +48,28 @@ Finally, remember that when you sit down to write, you're going to be doing a lo
 
 Focus on getting the ideas you want to say in an order that would make sense to someone who doesn't know the problem you're working on. For example, imagine a classmate of yours from undergrad or grad school. I find outlining helps a lot, and then refining the outline with more and more details until you have manageable chunks that you can actually write.
 
+#### Introduction
+
+Write the introduction after the main body of the paper is written. The introduction is where you tell the story of the paper and until you have the technical details more solidified, it's impossible to tell the story accurately. There are several parts of an introduction for a paper:
+
+* **Motivating the problem.**
+* **Explaining the approach.**
+* **Related work.**
+* **Explaining your contribution.**
+
+**To be finished later**
+
+#### Problem statement/model
+
+The second section of a paper is usually the model or problem statement. Here is where you set up the notation you are going to use for the rest of the paper. It's important to set all of this up precisely and consistently, or else you are going to waste a lot of time with inconsistent notation and equations that don't make sense.
+
+* **Notation.** This is where you set up *generic* notation conventions and notation which will be used throughout the paper. For example, you might say "For a positive integer $n$, let $[n] = \{1,2,\ldots, n\}$." Or you might say "We use boldface for random variables and roman type for realizations." Do not mix up generic notation conventions (boldface means this, calligraphic means that) and specific notation useed in setting up the problem you are studying. These are conceptually different things!
+
+* **The model/problem.** This is where...
+
+**To be finished later**
+
+
 #### Grammar and structure
 
 Here are some writing in English tips which I have had injected (metaphoricallly) into me from $N \gg 1$ of classes. Note that as an American, I basically only know one language, and it's questionable whether I even know it that well. American English is only one type of English! So these are not prescriptive (you have to do it this way) but more notes on what does and doesn't read as well to an American reader.
