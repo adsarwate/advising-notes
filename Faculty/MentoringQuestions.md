@@ -71,7 +71,7 @@ Try to identify 1-4 people (or resources) you already know who can provide help 
 * Role models (who you can talk to)
 * Accountability/deadlines
 
-**Example:** *For networking and building a reputation in my subfield, my postdoc advisor will be a great resource, since she is in a leadership position in my profesisonal society. My friend from grad school who started a few years before me would be a great person to ask about co-organizing a workshop.*
+**Example:** *For networking and building a reputation in my subfield, my postdoc advisor will be a great resource, since she is in a leadership position in my professional society. My friend from grad school who started a few years before me would be a great person to ask about co-organizing a workshop.*
 
 ### Identifying issues
 
