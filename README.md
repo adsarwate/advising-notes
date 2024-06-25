@@ -37,6 +37,7 @@ Some other resources to read:
 ## Writing stuff up
 
 * [General writing tips](WritingTips.md) **in progress**
+* [A short guide to mathematical writing](https://web.mit.edu/18.096/www/piiUJM2.pdf) which is really worth reading!
 * Writing a conference paper **to be written**
 * Writing a journal paper **to be written**
 * [Finalizing a paper](WritingEndgame.md)
