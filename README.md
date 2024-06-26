@@ -43,6 +43,7 @@ Some other resources to read:
 * [Finalizing a paper](WritingEndgame.md)
 * LaTeX tips **to be added**
    * [JDO's common errors](https://web.ece.ucdavis.edu/~jowens/commonerrors.html)
+   * [JDO's bibliography issues](https://www.ece.ucdavis.edu/~jowens/biberrors.html)
    * [Eddie Kohler's advice](https://www.read.seas.harvard.edu/~kohler/latex.html)
 
 ## Talks and posters
