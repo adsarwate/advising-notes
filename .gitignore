@@ -1,0 +1,14 @@
+*/Icon
+Icon
+*.bcf
+*.xml
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.bbl
+*.blg
+*.cns
+*.tdo
+/.DS_Store
+*.DS_Store
