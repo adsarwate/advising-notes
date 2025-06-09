@@ -9,14 +9,21 @@ Once you get the ideas in the right order, the technical material written, and t
 
 When you are going to submit something it helps to go through through the manuscript several times to check one last time for the small issues. Being systematic about this will take less time and catch more bugs. You can do complete checks over the document for each of these things one by one, so a check for typos, for citations, for bibliography, for math formatting, etc. Focusing on one issue per go-through is better so that you don't miss things from context-switching.
 
-* *Citations as nouns*: search for `\cite{}` commands and make sure you're not treating any of them as nouns. See below for more details.
-* *Bibliography*: check that the bibliography looks consistent and correct. 
-* *Spelling and grammar*: read the paper *backwards*, sentence-by-sentence or paragraph-by-paragraph). This helps you focus on each sentence individually to make sure it's correct. You can also see if the logic flows correctly.
-* *Math formatting*: check that equations have autosizing delimiters and are punctuated correctly. Check that there are not extra blank lines before/after equations.
+The major things to check for (one pass through the manuscript for each) are:
+
+1. **Typos**: there are now pretty decent spell check tools for LaTeX. The only downside is that dictionaries generally don't have lots of the technical words, so you might have to click through every time it flags "nonparametric" and so on.
+2. **Grammar**: read the paper *backwards*, sentence-by-sentence or paragraph-by-paragraph. This helps you focus on each sentence individually to make sure it's correct. You can also see if the logic flows correctly.
+3. **Notation consistency**: you should have written the manuscript using macros for the major notation if you followed the earlier advice. Do a check for notation consistency by making sure you used the macro everywhere and double check the macros to make sure the notation is what you want.
+* **Bibliography**: check that the bibliography looks consistent and correct. Make sure you have all the required fields for bibliography entries. IEEE has [a guide about what entries are needed](https://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/sites/7/IEEE_Reference_Guide.pdf) which is a reasonable starting point.
+
+You should also check for:
+
+* **Citations as nouns**: search for `\cite{}` commands and make sure you're not treating any of them as nouns. See below for more details.
+* **Math formatting**: check that equations have autosizing delimiters and are punctuated correctly. Check that there are not extra blank lines before/after equations.
 
 #### Citations and bibliographies
 
-[Follow Prof. John D. Owens's advice](https://www.ece.ucdavis.edu/~jowens/biberrors.html).
+[Follow Prof. John D. Owens's advice](https://www.ece.ucdavis.edu/~jowens/biberrors.html). IEEE has [guidance on what fields are needed](https://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/sites/7/IEEE_Reference_Guide.pdf) as well.
 
 * Don't use citations as nouns.    
 BAD:  "In [1], it was shown that A = B."
@@ -32,7 +39,9 @@ GOOD: "Shah et al. [1] showed that A = B."
   * Check titles for proper nouns! Unless you write "{Gaussian}" or "{G}aussian", LaTeX will render the it as "gaussian." This also holds for acronyms, so "{PCA}" and "{fMRI}" not "PCA" and "fMRI". 
   * Don't use "Signal Processing, IEEE Transactions on" but instead use "IEEE Transactions on Signal Processing"
   * Make sure you get page numbers if there are any: many publishers will ask you to put them in anyway so doing it ahead of time saves time later.
-  * By default sure you include a URL in the BibTeX. They can be removed later if you need the space.
+  * By default sure you include a DOI or URL in the BibTeX if available. They can be removed later if you need the space.
+
+**ArXiV Papers**: Google Scholar and even ArXiV itself uses the `@misc` type for ArXiV preprints. I think that `@techreport` looks a bit nicer but `@misc` is fine. Just make sure you pick one and stick with it.
 
 
 ### Making things fit

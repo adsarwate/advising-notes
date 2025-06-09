@@ -48,6 +48,15 @@ Finally, remember that when you sit down to write, you're going to be doing a lo
 
 Focus on getting the ideas you want to say in an order that would make sense to someone who doesn't know the problem you're working on. For example, imagine a classmate of yours from undergrad or grad school. I find outlining helps a lot, and then refining the outline with more and more details until you have manageable chunks that you can actually write.
 
+A final tip for math writing in LaTeX is to **use macros to make your life easier**. If you have a macro for some notation like an empirical CDF:
+
+> `\newcommand{\eCDF}{\hat{F}}`
+
+you can then change all instances from $\hat{F}$ to $\hat{G}$ by just changing one character *as long as you use the macro everywhere*. Macros also make it much easier to check for notation consistency. They can also make your equations easier to understand semantically:
+
+> `\esterr_n = \norm{ \trueCDF - \eCDF_n }_{\infty}` 
+
+
 #### Introduction
 
 Write the introduction after the main body of the paper is written. The introduction is where you tell the story of the paper and until you have the technical details more solidified, it's impossible to tell the story accurately. There are several parts of an introduction for a paper:
@@ -117,5 +126,6 @@ There is a ton of advice out there on editing and writing. Here are a few refere
 * [Common errors](https://www.cs.columbia.edu/~hgs/etc/writing-bugs.html)
 * Howard S. Becker, Writing for Social Scientists, University of Chicago Press, 2007.  
 You may think that this is not a book engineers need to read but it has lots of great advice about the writing process, especially in the first few chapters.
+
 
 
