@@ -14,7 +14,11 @@ The major things to check for (one pass through the manuscript for each) are:
 1. **Typos**: there are now pretty decent spell check tools for LaTeX. The only downside is that dictionaries generally don't have lots of the technical words, so you might have to click through every time it flags "nonparametric" and so on.
 2. **Grammar**: read the paper *backwards*, sentence-by-sentence or paragraph-by-paragraph. This helps you focus on each sentence individually to make sure it's correct. You can also see if the logic flows correctly.
 3. **Notation consistency**: you should have written the manuscript using macros for the major notation if you followed the earlier advice. Do a check for notation consistency by making sure you used the macro everywhere and double check the macros to make sure the notation is what you want.
-* **Bibliography**: check that the bibliography looks consistent and correct. Make sure you have all the required fields for bibliography entries. IEEE has [a guide about what entries are needed](https://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/sites/7/IEEE_Reference_Guide.pdf) which is a reasonable starting point.
+* **Bibliography**: check that the bibliography looks consistent and correct. Make sure you have all the required fields for bibliography entries. IEEE has [a guide about what entries are needed](https://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/sites/7/IEEE_Reference_Guide.pdf) which is a reasonable starting point. Some things to check out for:
+   * Titles of proceedings should be capitalized, so instead of *Proceedings of the AAAI conference on artificial intelligence* it should be *Proceedings of the AAAI Conference on Artificial Intelligence*.
+   * It's sometimes helpful, especially for conferences that happen every year, to put the acronym, so *Proceedings of the AAAI Conference on Artificial Intelligence (AAAI)*.
+   * Check if ArXiV papers have actually been published. This is important so that citations go to the author's final version of the work.
+   * Check for capitalization in titles of names, like "Lipschitz" or "Gaussian" or "Bayesian". You can put the letter whose capitalization should be maintained in {}, so "{B}ayesian" or "{Bayesian}".
 
 You should also check for:
 
