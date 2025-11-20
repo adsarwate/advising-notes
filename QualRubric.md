@@ -1,14 +1,14 @@
 ## PhD Qualifying Exams
 
-The goal of a Qualifying Exam ("qual") is for a student to effectively demonstrate that they have the knowledge and skills that will be needed to conduct meaningful research in their chosen subfield. There are a number of key phrases in this sentence:
+The goal of a Qualifying Exam ("qual") is for a student to *effectively demonstrate that they have the knowledge and skills that will be needed to conduct meaningful research in their chosen subfield*. There are a number of key phrases in this sentence:
 
-* *effectively demonstrate* : the student should give a presentation of a research topic in a way that is organized, clear, correct, and convincing, as judged by the examiners.
+* **effectively demonstrate** : the student should give a presentation of a research topic in a way that is organized, clear, correct, and convincing, as judged by the examiners.
 
-* *knowledge and skills* : the student should demonstrate during the exam that they understand fundamental topics in ECE that are directly needed for and/or related to their research.
+* **knowledge and skills** : the student should demonstrate during the exam that they understand fundamental topics in ECE that are directly needed for and/or related to their research.
 
-* *meaningful research* : the student should be able to contextualize the topic that they present to describe why the problem/question is important and why the proposed solution or analysis is appropriate/effective.
+* **meaningful research** : the student should be able to contextualize the topic that they present to describe why the problem/question is important and why the proposed solution or analysis is appropriate/effective.
 
-* *chosen subfield* : the student may give a talk related to their own research but the exam is about evaluating their command of the key ideas and tools in a subfield/sub area of ECE.
+* **chosen subfield** : the student may give a talk related to their own research but the exam is about evaluating their command of the key ideas and tools in a subfield/sub area of ECE.
 
 The goal of the committee/examiners is to:
 
@@ -22,15 +22,7 @@ The goal of a rubric is to make it clearer to the examinees and examiners what i
 
 To make questions easier to state, let's assume the student is presenting their own research, perhaps based on a recently submitted or accepted conference paper. It's important to note that "the presentation" is both the prepared materials (slides) and the questions and answers given by the student. 
 
-The proposed rubric would be to rate the how well the presentation addressed the question below on a Likert scale (e.g. 1-5) such as:
-
-   1. Unacceptable
-   2. Needs significant improvement
-   3. Needs minor improvement
-   4. Good
-   5. Above expected performance
-
-For 2-3 the examiner should provide examples or suggestions for improvement. For 5, the examiner should be encouraged to highlight what was particularly effective. These can form the basis for ongoing advice to future examinees.
+It's tempting to make a numerical rubric (e.g. 1-5) for each of the questions below. This would invite a score-based approach with a cutoff for passing etc. This is not aligned with the intent of the exam, which is to evaluate whether the student is prepared to do doctoral research. Taking in the feedback/answers to the questions can give a more constructive approach to a conditional pass or a failure so that the student can fix the things that were lacking.
 
 #### Context and importance
 
@@ -74,10 +66,15 @@ It is tempting to think that a "perfect" presentation could address all of these
 * *Advice on how to make the "story" of the research more accessible.* Part of learning to be a researcher is learning how to communicate technical ideas to a variety of audiences. Even if a student can make their ideas clear to some professors in related areas, there might be some ideas on how to communicate to other audiences.
 * *Recommendations for other application domains for the research.* A student might be have been motivated by one application setting but perhaps the ideas could be applicable to other applications that they have not considered.
 
-**to be written**
+#### Preparing the slides and materials
 
+There are some bad strategies one could use in preparing for the qualifying exam:
 
+* Making a 100 slide deck with backup slides on every antipated question.
+* Taking a 20 minute conference talk and basically giving that with no major changes.
+* Trying to create the perfect presentation and focusing on addressing each of the questions listed above one by one.
 
+The first is bad because it's a huge time sink. The second is bad because it assumes the examiners are already in the narrow subfield of the topic. The third is bad because it priotizes passing the exam instead of telling the "story" of the research
 
 
 
