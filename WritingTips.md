@@ -10,6 +10,8 @@ As always, Raul Pacheco has some [great tips](http://www.raulpacheco.org/2013/02
 
 ### Getting started
 
+**I highly recommend writing things up as you go along. It will give you practice and also make your notes "real" instead of scratch work. If you write things up as you go along, writing a paper later will be easier.**
+
 When you sit down to formally write up your results into something that looks like a paper, it's time to get a bit more organized and systematic. You might be incorporating work from a [previous writeup](MakingWriteups.md), handwritten notes, and/or just little snippets and fragments from an email thread. Regardless of what you have so far, *make a fresh document*. 
 
 One of the hardest things about writing is getting started. Staring at a blank page can be quite intimidating. But there are a couple of ways to get started. 
@@ -116,6 +118,31 @@ In this particular case, it might be less clear to call the triangle inequality 
 * If using "use" works where you wanted to write "utilize", then use "use" instead.
 * "upto" should be "up to"
 
+### Images, tables, and whatnot
+
+#### Graphics
+
+Some tips for graphics in general.
+
+* **Use vector graphic formats** (this will be PDF usually) and not bitmaps (PNG, JPEG, GIF, etc.). Vector formats look good after rescaling whereas bitmaps can look ugly and pixelated.
+* **Do not mess with the aspect ratio** of an image. That is, when you include an image, you can scale the height or the width but not both. Doing both leads to ugly squished or stretched images.
+
+#### Plots
+
+Some tips for plots and other data visualizations:
+
+* Use a [color palette](https://matplotlib.org/stable/users/explain/colors/colormaps.html) that is friendly for color-blind people.
+* Make sure lines are thick enough to be seen. Use different line formats (dashed, dotted, etc.) to help distinguish between them.
+* Don't crowd too many curves/plots into one figure. Think about what idea/story you are trying to convey. It might take a few figures but each one can tell a piece of it.
+* Add a legend to your figures.
+* Use informative captions. Some readers just look at the figures first before reading the rest of the paper.
+* If the axes are integer valued (e.g. number of data points) then do not use labels on the axis with fractions. That is, make the axis labels 1, 2, 3,... instead of 0.0, 1.0, 2.0,...
+
+#### Tables
+
+* Use the ``booktabs`` [package in LaTeX](http://ctan.org/pkg/booktabs). The package should already be loaded with your LaTeX distribution. There are some [basic examples](https://granthos.com/learn/tables) you can find online. 
+* Read [these slides](https://people.inf.ethz.ch/markusp/teaching/guides/guide-tables.pdf) to see what nice tables look like.
+* You can also [get very fancy](https://tex.stackexchange.com/questions/112343/beautiful-table-samples) if you want (but probably useful mostly for talks if you use LaTeX for talks).
 
 ### Editing
 
