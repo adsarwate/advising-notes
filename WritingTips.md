@@ -1,10 +1,10 @@
 ## Writing tips
 
-Writing is hard!
+Writing is hard! Writing is hard! It is 99\% *rewriting*. Be prepared for writing to take lots of time: more time than you think it should.
+
+Here are some writing in English tips which I (ADS) have had beaten (metaphoricallly) into me from $N \gg 1$ mathematics classes. Note that as a typical American, I basically only know one language, and it's questionable whether I even know it that well. American English is only one type of English! So these are not prescriptive (i.e.~you have to do it this way) but more notes on what does and doesn't read as well to an American reader.
 
 One of the best books I read on writing was Harold Becker's *Writing for Social Scientists* (in the lab Google Drive or you can find it online). It says "for social scientists" but has a lot of general advice which can help when you are writing.
-
-One of the main takeaways is that writing is 99% rewriting. Be prepared for writing to take lots of time: more time than you think it should.
 
 As always, Raul Pacheco has some [great tips](http://www.raulpacheco.org/2013/02/improving-your-academic-writing-my-top-10-tips/).
 
@@ -34,6 +34,10 @@ One of the hardest things about writing is getting started. Staring at a blank p
 * Being verbose: start out by writing lots of explanation of what you are doing and why. For example: "Now what we need to do is upper bound $\beta^2(x)$ by a constant that does not depend on $x$. There are two ways to do this: one by analyzing the recursion in equation (5) and the other by doing a Taylor series expansion. Let's try the second approach first." That way when you go back to those notes later you will remember what you were thinking at the time. 
 
 Always, always, always keep in mind who your *intended reader* is. This will change the way you write things! You may be writing for yourself, writing for a student in a class, writing for a peer/colleague, writing for an expert in your sub-problem, or writing for someone else entirely. Here I'm using ``writing'' but it can also mean giving a talk, teaching a class, etc.
+
+Another thing is that you might be writing for yourself now, but if you will be writing for a different audience later, you might want to start writing that way to make your life easier later. 
+
+Once you have some small thing proved, taking the time to write it up as cleanly and clearly as you can for as broad an audience as you can manage is a good exercise -- you may decide to take out some of the explanations but cutting is easier than adding things in after getting negative reviews from confused readers.
 
 
 ### Technical writing
