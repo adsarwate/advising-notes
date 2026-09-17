@@ -6,15 +6,24 @@ This is a document collecting some tips on writing (both mathematical writing an
 
 ### Macros and packages that are useful
 
+Making macros for your writeup can be extremely helpful in making your equations easier to read in the raw `.tex` file. For example, suppose you are writing something up and defined $\beta$ to be the bandwidth of a communication link. Later on you realize you need $\beta$ for something else, and now you have to go through and change all the $\beta$ to $W$ instead. What a pain!
+
+Instead, if you have a macro defined like:
+>		\newcommand{\bw}{\beta}
+
+then you can just change one line to switch all the $\beta$s to 2.
+
+There are also lots of symbols and other things defined in various packages. 
+
 * [formatting.tex](LaTeX/formatting.tex) has a bunch of packages that are included for use in this template.
-* [macros.tex](LaTeX/macros.tex) has macros which you might find useful, like using `\mbf` and `\mc` for ``\mathbf` and `\mathcal`, or custom functions like `\prob{X \in \mc{A}}` for probabilities and `\expect{X^2}` for expectations. There are also conditional distributions `\condP{A}{B}` and expectations `\condE{Y}{X}`, as well as inner products `\ip{\mbf{x}}{\mbf{y}}`,  matrix norms: `\matnorm`. Check out the file for more.
-* There are autosizing delimiters which are starred versions of the paired delimiters. Here's an example:
+* [macros.tex](LaTeX/macros.tex) has a lot of predefined macros which you might find useful, like using `\mbf` and `\mc` for ``\mathbf` and `\mathcal`, or custom functions like `\prob{X \in \mc{A}}` for probabilities and `\expect{X^2}` for expectations. There are also conditional distributions `\condP{A}{B}` and expectations `\condE{Y}{X}`, as well as inner products `\ip{\mbf{x}}{\mbf{y}}`,  matrix norms: `\matnorm`. Check out the file for more.
+* [macros.tex](LaTeX/macros.tex) also defines paired delimiters like $| |$, $( )$, $\{ \}$ and $[ ]$ which are autosizing Here's an example:
 >		\begin{align}
 >		\E{ f\parens*{ \bigcup_{i=1}^{N} \mc{X}_i } 
 >			- \norm*{ \sum_{i=1}^{n} X_i }_{L^1} } 
 > 		\ge 0.
 >		\end{align}
-* For functions with names like "Diam", it looks a bit nicer to typeset them like $\sin$ or $\cos$ (i.e. not italicised). Some functions like $\Var(\cdot)$ are already defined in the macros file. The best way to define a new command like this is
+* For functions with names like "Diam", it looks a bit nicer to typeset them like $\sin$ or $\cos$ (i.e. not italicised). Some functions like `\Var` are already defined in the macros file. The best way to define a new command like this is
 > 		\DeclareMathOperator{\Diam}{Diam} 
 
 ### Equation formatting
