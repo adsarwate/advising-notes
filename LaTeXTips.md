@@ -58,6 +58,10 @@ There are also lots of symbols and other things defined in various packages.
 >			\frac{3}{\gamma} n^{-1/2} \le 1
 >			\end{align}	
 
+* There are [three schools of thought](https://math.stackexchange.com/questions/2362196/when-should-an-equation-be-numbered-when-writing-a-paper) regarding equation numbering. For the submitted paper, number almost every equation so that reviewers can reference them at will. For the the final version you can choose to number all equations, number only referenced equations (e.g using \eqref{}), or all "important" equations. If you want the middle option, there's a shortcut:
+> \usepackage{mathtools}
+> \mathtoolsset{showonlyrefs,showmanualtags}
+
 ### References and labels
 
 * You can use `\label` and `\ref` to avoid hard-coding references. Use `\eqref` for equation references and then it will automatically put the parentheses around the number.
